@@ -37,6 +37,13 @@ export default defineConfig({
       copyright: 'Copyright © 2024 - '+(new Date()).getFullYear()+'. <a href="https://github.com/mezamc">Meza Inc.</a>'
     },
 
+    notFound: {
+      code: 'Ошибка 404',
+      title: 'Страница не найдена',
+      quote: '',
+      linkText: 'На Главную'
+    },
+
     search: {
       provider: 'local',
       options: {
