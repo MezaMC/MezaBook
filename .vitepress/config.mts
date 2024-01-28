@@ -94,7 +94,7 @@ export default defineConfig({
           { text: 'Главная', link: '/ov/' },
           { text: 'Правила', link: '/ov/rules' },
           { text: 'Обновления', link: '/ov/updates' },
-          { text: 'Discord', link: 'https://ddd.com' }
+          { text: 'Discord', link: 'https://ds.ominousvoid.net' }
         ]
       }
     ],

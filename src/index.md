@@ -38,7 +38,7 @@ features:
 
   - title: <span class='emoji'>⚡</span> Стоит на Cloudflare Pages
     details: Это гарантирует стабильную работу сайта, удобство деплоя и защиту от DDoS атак.
-    link: https://pages.cloudflate.com
+    link: https://pages.cloudflare.com
 ---
 
 <style>
