@@ -11,7 +11,7 @@ hero:
       text: 📖 О проекте
       link: /about
     - theme: alt
-      text: 🪦 OminousVoid
+      text: OminousVoid
       link: /ov/
 
 features:
