@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-// FontAwesome Telegram Icon
+// FontAwesome Telegram icon
 const TelegramIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">' +
     '<path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 ' +
     '39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-' +
