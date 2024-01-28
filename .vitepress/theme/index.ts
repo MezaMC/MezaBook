@@ -3,14 +3,14 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import Comp from "./comp.vue";
+// import Comp from "./comp.vue";
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'aside-ads-after': () => h(Comp)
+      // 'aside-ads-after': () => h(Comp)
     })
   },
   enhanceApp({ app, router, siteData }) {

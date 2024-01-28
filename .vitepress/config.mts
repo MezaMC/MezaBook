@@ -71,7 +71,7 @@ export default defineConfig({
 
 
     editLink: {
-      pattern: 'https://github.com/MezaMC/MezaBook/edit/main/:path',
+      pattern: 'https://github.com/MezaMC/MezaBook/edit/main/src/:path',
       text: 'Редактировать на GitHub'
     },
 
@@ -86,8 +86,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Статьи', link: '/markdown-examples' },
-      { text: 'Инструкции', link: '/markdown-examples' },
+      { text: 'Статьи', link: '/about', activeMatch: '-' },
+      { text: 'Инструкции', link: '/about', activeMatch: '-' },
       {
         text: 'OminousVoid',
         items: [
@@ -100,22 +100,6 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/bab': [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
       '/ov': [{
         text: 'Основное',
         items: [

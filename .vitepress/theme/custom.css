@@ -27,6 +27,10 @@
     margin-bottom: 25px;
 }
 
+.vp-doc .warning h1 {
+    border-bottom: 1px var(--vp-c-warning-3) solid;
+}
+
 .vp-doc a {
     text-decoration: unset;
 }
