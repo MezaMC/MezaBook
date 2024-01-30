@@ -1,6 +1,7 @@
 ---
 pageClass: ov
 editLink: false
+comment: false
 ---
 
 # Кланы

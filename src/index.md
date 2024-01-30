@@ -40,16 +40,3 @@ features:
     details: Это гарантирует стабильную работу сайта, удобство деплоя и защиту от DDoS атак.
     link: https://pages.cloudflare.com
 ---
-
-<style>
-
-.emoji {
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 5px;
-    margin-right: 5px;
-    background: var(--vp-c-default-soft);
-
-}
-
-</style>

@@ -2,6 +2,7 @@
 aside: false
 pageClass: ov
 editLink: false
+comment: false
 ---
 
 # OminousVoid

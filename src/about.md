@@ -2,6 +2,7 @@
 aside: false
 editLink: false
 lastUpdated: false
+comment: false
 ---
 
 ::: warning <h1>⚠️ В разработке</h1>

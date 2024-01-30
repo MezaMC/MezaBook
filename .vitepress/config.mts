@@ -44,6 +44,8 @@ export default defineConfig({
       linkText: 'На Главную'
     },
 
+
+
     search: {
       provider: 'local',
       options: {
