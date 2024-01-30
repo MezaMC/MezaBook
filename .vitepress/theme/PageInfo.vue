@@ -7,15 +7,15 @@ const { frontmatter } = useData()
 const imageUrl = ref(null);
 
 fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
-    .then(resp => resp.json())
-    .then(data => imageUrl.value = data['avatar_url'])
-    .catch(() => {});
+  .then(resp => resp.json())
+  .then(data => imageUrl.value = data['avatar_url'])
+  .catch(() => {});
 
 </script>
 
 
 <template>
-  <div class="container" v-if="frontmatter['author']">
+  <div class="container">
     <span class="label">Автор статьи</span>
     <div class="user">
       <img :src="imageUrl" alt="avatar" class="avatar" v-if="imageUrl">

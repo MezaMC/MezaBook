@@ -7,16 +7,11 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import './style.scss'
 import './custom.scss'
 import './ov-home.scss'
-import PageInfo from "./PageInfo.vue";
+import MyLayout from "./MyLayout.vue";
 
 export default {
   extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'sidebar-nav-before': () => h(PageInfo)
-    })
-  },
+  Layout: MyLayout,
   enhanceApp({ app, router, siteData }) {
     // ...
   },
