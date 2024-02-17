@@ -4,15 +4,18 @@ editLink: false
 comment: false
 ---
 
-<style>
-.custom-block h1 {
-    font-size: 25px;
-}
+<style lang="sass">
+.custom-block h1
+    font-size: 25px
 </style>
 
 # История обновлений
 
-<h2 id="1.2" style="margin: 0; padding: 0;"></h2>
+## OV 1.3 {#1.3}
+Множество оптимизаций.
+::: details Полный список изменений
+- Переработаны 
+:::
 
 ## OV 1.2 {#1.2}
 Исправления багов, обновление плагинов.

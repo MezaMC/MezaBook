@@ -1,12 +1,13 @@
 <script setup>
 import Rules from "./Rules.vue";
 import RuleCard from "./RuleCard.vue";
+import Tag from "./Tag.vue";
 </script>
 
 <template>
   <div class="content">
 
-    <h2><code>mc 0</code> Общие правила</h2>
+    <h2><Tag>mc 0</Tag> Общие правила</h2>
 
   <Rules>
 
@@ -22,7 +23,7 @@ import RuleCard from "./RuleCard.vue";
 
   </Rules>
 
-    <h2><code>mc 1</code> Правила общения</h2>
+    <h2><Tag>mc 1</Tag> Правила общения</h2>
 
   <Rules>
 
@@ -49,11 +50,11 @@ import RuleCard from "./RuleCard.vue";
 
   </Rules>
 
-    <h2><code>mc 2</code> Правила игры</h2>
+    <h2><Tag>mc 2</Tag> Правила игры</h2>
 
   <Rules>
 
-    <RuleCard id="mc2.1" title='Гриферство запрещено!' punish="Бан от 7 дней">
+    <RuleCard id="mc2.1" title='Гриферство запрещено' punish="Бан от 7 дней">
       Нельзя ломать чужие постройки, убивать чужих мобов или вредить другим игрокам подобными способами.
       За массовое гриферство перманентный бан. </RuleCard>
 

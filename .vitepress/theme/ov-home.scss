@@ -32,6 +32,25 @@
         background-size: cover;
     }
 
+    // Кастомный сайдбар
+    .VPSidebar {
+        background-color: transparent !important;
+        .curtain {
+            background-color: transparent !important;
+        }
+        border-right: 1px solid var(--vp-c-divider);
+    }
+
+    --vp-code-block-bg: transparent;
+    .vp-doc {
+        .vp-code {
+            background-color: transparent;
+        }
+        .vp-adaptive-theme {
+            border: 1px solid var(--vp-c-divider);
+        }
+    }
+
     // Кастомные градиенты
     .VPHome {
         --vp-home-hero-name-background: -webkit-linear-gradient(
