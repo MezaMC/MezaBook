@@ -68,20 +68,20 @@
 
     // Кастомные цвета карточек с фичами
     .VPFeatures .VPLink {
-        background: rgba(0, 0, 0, 0.30);
+        background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(6px);
-        outline: rgba(255, 255, 255, 0.1) 1px solid;
+        outline: rgba(255, 255, 255, 0.08) 2px solid;
     }
 
     // Оформление кнопок на домашней странице
     .VPHero .VPButton {
-        background: transparent !important;
-        outline: rgba(255, 255, 255, 0.26) 1px solid;
+        background: rgba(255, 255, 255, 0.03) !important;
+        outline: rgba(255, 255, 255, 0.2) 2px solid;
         transition: 100ms;
         backdrop-filter: blur(2px);
 
         &:hover {
-            outline: rgba(255, 255, 255, 0.44) 1px solid;
+            outline: rgba(255, 255, 255, 0.44) 2px solid;
         }
 
         &:active {
