@@ -9,7 +9,7 @@ const { frontmatter } = useData()
 
 <template>
   <Layout>
-    <template #sidebar-nav-before>
+    <template #aside-outline-before>
       <PageInfo v-if="frontmatter['author']"></PageInfo>
     </template>
   </Layout>

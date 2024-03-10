@@ -4,9 +4,9 @@ import type { Theme } from 'vitepress'
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import './style.scss'
-import './custom.scss'
-import './ov-home.scss'
+import './scss/style.scss'
+import './scss/custom.scss'
+import './scss/ov-home.scss'
 import MyLayout from "./MyLayout.vue";
 
 export default {

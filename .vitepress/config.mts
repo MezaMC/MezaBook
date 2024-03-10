@@ -75,7 +75,8 @@ export default defineConfig({
       next: 'Следующая страница'
     },
     outline: {
-      label: 'Содержание'
+      label: 'Содержание',
+      level: [2,3]
     },
 
 
@@ -95,10 +96,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Статьи', link: '/about', activeMatch: '-' },
-      { text: 'Инструкции', link: '/about', activeMatch: '-' },
+      {
+        text: 'Категории',
+        items: [
+          { text: 'Информация', link: '/info/' },
+          { text: 'О сообществе', link: '/community/' }
+        ]
+      },
       {
         text: 'OminousVoid',
+        activeMatch: '/ov/',
         items: [
           { text: 'Главная', link: '/ov/' },
           { text: 'Правила', link: '/ov/rules' },
@@ -120,11 +127,25 @@ export default defineConfig({
       {
         text: 'Статьи',
             items: [
-        { text: 'Кланы', link: '/ov/pages/clans' },
-        { text: 'Привязка аккаунтов', link: '/ov/pages/link' },
+        { text: 'Паранормальщина', link: '/ov/pages/paranormal' },
+        { text: 'Особенности чата', link: '/ov/pages/chat' },
         { text: 'Статус души', link: '/ov/pages/soul' },
-        { text: 'Мир пустоты', link: '/ov/pages/void' }
+        { text: 'Мир пустоты', link: '/ov/pages/void' },
+        { text: 'Кланы', link: '/ov/pages/clans' }
       ]
+      }],
+      '/community': [{
+        text: 'О сообществе',
+        link: '/community/'
+      }],
+      '/info': [{
+        text: 'Информация',
+        items: [
+          { text: 'О MezaBook', link: '/info/' },
+          { text: 'Правила', link: '/info/rules' },
+          { text: 'Создание статей', link: '/info/creating-page' },
+          { text: 'Создание своей вики', link: '/info/creating-wiki' }
+        ]
       }]
     },
 

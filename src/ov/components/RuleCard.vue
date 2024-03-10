@@ -24,10 +24,9 @@ const props = defineProps(['id', 'title', 'punish'])
   margin-bottom: 10px
   outline: var(--vp-c-divider) 1px solid
   background: radial-gradient(circle at 45px 25px, rgba(64, 24, 208, 0.06), transparent 20%)
-  transition: 150ms
+  transition: 250ms
   &:hover
     outline: var(--vp-c-brand) 1px solid
-    box-shadow: 0 0 8px 1px var(--vp-c-brand-3)
 
 .id
   border-radius: 5px
