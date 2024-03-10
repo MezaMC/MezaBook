@@ -3,7 +3,7 @@ const props = defineProps(['id', 'title', 'punish'])
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" :id="props.id">
     <div class="header">
       <div class="id">{{ props.id }}</div>
       <div class="title">{{ props.title }}</div>
@@ -15,46 +15,43 @@ const props = defineProps(['id', 'title', 'punish'])
   </div>
 </template>
 
-<style scoped>
+<style lang="sass" scoped>
 
-.card {
-  background: var(--vp-c-bg-alt);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-  outline: rgba(255, 255, 255, 0.1) 1px solid;
-}
+.card
+  background: transparent
+  border-radius: 10px
+  padding: 10px
+  margin-bottom: 10px
+  outline: var(--vp-c-divider) 1px solid
+  background: radial-gradient(circle at 45px 25px, rgba(64, 24, 208, 0.06), transparent 20%)
+  transition: 250ms
+  &:hover
+    outline: var(--vp-c-brand) 1px solid
 
-.id {
-  background: var(--vp-c-bg-elv);
-  border-radius: 5px;
-  padding: 4px 12px;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.id
+  border-radius: 5px
+  padding: 4px 12px
+  width: fit-content
+  display: flex
+  justify-content: center
+  align-items: center
+  background: var(--vp-c-brand-soft)
 
-.header {
-  display: flex;
-}
+.header
+  display: flex
 
-.title {
-  padding: 4px 12px;
-  font-size: 20px;
-}
+.title
+  padding: 4px 12px
+  font-size: 20px
 
-.desc {
-  margin-top: 10px;
-  margin-left: 5px;
-  font-size: 18px;
-  color: #b2b2b2;
-}
+.desc
+  margin-top: 10px
+  margin-left: 5px
+  font-size: 18px
+  color: #b2b2b2
 
-.punish {
-  margin-top: 10px;
-  margin-left: 5px;
-  color: #9d8080;
-}
-
+.punish
+  margin-top: 10px
+  margin-left: 5px
+  color: #9d8080
 </style>

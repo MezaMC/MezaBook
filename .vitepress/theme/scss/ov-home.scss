@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800&display=swap');
+
+
+// Переопределение цветов для страниц с pageClass: ov
+:root:has(.ov) {
+    --vp-c-brand-1: #cfbde1;
+    --vp-c-brand-2: #a69bbb;
+    --vp-c-brand-3: #837e94;
+    --vp-c-brand-soft: rgba(156, 157, 190, 0.16);
+
+    --vp-c-default-1: #2e2e38;
+    --vp-c-default-2: #24242d;
+    --vp-c-default-3: #1c1c23;
+    --vp-c-default-soft: rgba(72, 73, 94, 0.16);
+
+    --vp-c-bg: #121213;
+    --vp-c-bg-alt: #19181e;
+    --vp-c-bg-elv: #1a1a1c;
+    --vp-c-bg-soft: rgba(29, 29, 33, 0.16);
+}
+
+
+// Стили только для страниц с pageClass: ov
+.ov  {
+    .DocSearch-Button {
+        background-color: transparent;
+    }
+
+    // Кастомный шрифт
+    font-family: 'Noto Sans Mono', monospace;
+
+    // Кастомный фон home страницы
+    &:has(.VPHome) {
+        background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.7)), url("/bg_.png") no-repeat fixed center;
+        background-size: cover;
+    }
+
+    // Кастомный сайдбар
+    .VPSidebar {
+        background-color: transparent !important;
+        .curtain {
+            background-color: transparent !important;
+        }
+        border-right: 1px solid var(--vp-c-divider);
+    }
+
+    --vp-code-block-bg: transparent;
+    .vp-doc {
+        .vp-code {
+            background-color: transparent;
+        }
+        .vp-adaptive-theme {
+            border: 1px solid var(--vp-c-divider);
+        }
+    }
+
+    // Кастомные градиенты
+    .VPHome {
+        --vp-home-hero-name-background: -webkit-linear-gradient(
+                        120deg,
+                        #a69db7 30%,
+                        #cbaaaa
+        );
+
+        --vp-home-hero-image-background-image: linear-gradient(
+                        -45deg,
+                        rgba(228, 218, 255, 0.12) 50%,
+                        rgba(255, 215, 215, 0.13) 50%
+        );
+    }
+
+    // Кастомные цвета карточек с фичами
+    .VPFeatures .VPLink {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(6px);
+        outline: rgba(255, 255, 255, 0.08) 2px solid;
+    }
+
+    // Оформление кнопок на домашней странице
+    .VPHero .VPButton {
+        background: rgba(0, 0, 0, 0.5) !important;
+        outline: rgba(255, 255, 255, 0.2) 1px solid;
+        transition: 250ms;
+        backdrop-filter: blur(2px);
+
+        &:hover {
+            outline: rgba(255, 255, 255, 0.4) 1px solid;
+            box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.1);
+        }
+
+        &:active {
+            outline: rgba(255, 255, 255, 0.6) 1px solid;
+        }
+    }
+}

@@ -15,8 +15,8 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
 
 
 <template>
-  <div class="container">
-    <span class="label">Автор статьи</span>
+  <div class="container mb-5">
+    <span class="label mb-2">Автор статьи</span>
     <div class="user">
       <img :src="imageUrl" alt="avatar" class="avatar" v-if="imageUrl">
       <a class="link" :href="`https://github.com/${frontmatter.author}`" v-if="imageUrl">{{frontmatter.author}}</a>
@@ -30,12 +30,10 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
 
 .container {
 
-  background-color: var(--vp-c-bg);
+  background-color: var(--vp-c-bg-elv);
 
   width: auto;
   border-radius: 10px;
-  margin-top: 15px;
-  margin-bottom: 5px;
   padding: 4px 12px;
   display: flex;
   flex-direction: column;

@@ -8,10 +8,10 @@ hero:
   image: /logo/home.svg
   actions:
     - theme: alt
-      text: 📖 О проекте
-      link: /about
+      text: 📖 О сообществе
+      link: /info/
     - theme: alt
-      text: OminousVoid
+      text: 𖤐 OminousVoid
       link: /ov/
 
 features:
@@ -40,3 +40,9 @@ features:
     details: Это гарантирует стабильную работу сайта, удобство деплоя и защиту от DDoS атак.
     link: https://pages.cloudflare.com
 ---
+
+<script setup>
+    import HomeContent from "./HomeContent.vue";
+</script>
+
+<HomeContent />
