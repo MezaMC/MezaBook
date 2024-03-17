@@ -21,11 +21,11 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['meta', { name: 'theme-color', content: '#7c5eff' }],
+    ['meta', { name: 'theme-color', content: '#6eb59f' }],
     ['meta', { property: 'og:url', content: 'https://book.meza.one/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'MezaBook' }],
-    ['meta', {property: 'og:description', content: 'Сайт о сообществе мистических Minecraft серверов'}],
+    ['meta', {property: 'og:description', content: 'Сайт о русскоязычном сообществе майнкрафт мистики'}],
     ['link', { rel: 'icon', href: '/logo/min.svg' }]
   ],
 
@@ -100,7 +100,7 @@ export default defineConfig({
         text: 'Категории',
         items: [
           { text: 'Информация', link: '/info/' },
-          { text: 'О сообществе', link: '/community/' }
+          { text: 'Сообщество', link: '/community/' }
         ]
       },
       {
@@ -135,9 +135,22 @@ export default defineConfig({
       ]
       }],
       '/community': [{
-        text: 'О сообществе',
-        link: '/community/'
-      }],
+        text: 'Информация',
+        items: [
+          {text: "О сообществе", link: '/community/'}
+        ]
+      },
+      {
+        text: 'Сервера',
+        items: [
+          {text: "Мониторинг", link: '/community/servers/'},
+          {text: "OminousVoid 🔗", link: '/ov/'},
+          {text: "Мёртвые сервера", link: '/community/servers/dead', collapsed: true, items: [
+              {text: 'SiimpAlone', link: '/community/servers/SiimpAlone'}
+            ]}
+        ]
+      },
+      ],
       '/info': [{
         text: 'Информация',
         items: [
@@ -151,6 +164,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MezaMC/MezaBook' },
+      { icon: 'discord', link: 'https://discord.gg/YNw5zke3Y3' },
       { icon: {svg: TelegramIcon}, link: 'https://t.me/meza_inc' }
     ]
   }
