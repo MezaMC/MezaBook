@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 
 
 // Переопределение цветов для страниц с pageClass: ov
@@ -37,7 +37,7 @@
 
     // Кастомный сайдбар
     .VPSidebar {
-        background-color: transparent !important;
+        background-color: var(--vp-c-bg) !important;
         .curtain {
             background-color: transparent !important;
         }
