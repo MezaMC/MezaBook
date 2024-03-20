@@ -7,6 +7,26 @@ comment: false
     import ServerCard from "./components/ServerCard.vue";
     import {Icon} from "@iconify/vue";
 </script>
+<style scoped>
+    .rainbow-text {
+    background: linear-gradient(80deg,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(330, 100%, 50%),
+    hsl(360, 100%, 50%)
+    ), #FFFFFF44;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
 
 # Мистические сервера
 
@@ -23,11 +43,12 @@ comment: false
 </ServerCard>
 
 <ServerCard ip="198.251.89.194:20096" dslink="qEupJs53Tc">
-    <span style='color: #CC0000;'>UnknownDead</span> - демонический сервер.
+    <span style='color: #DD0000;'>UnknownDead</span>
+    <span style='color: #990000;'> - The most terrible and demonic server.</span>
 </ServerCard>
 
-
-<ServerCard ip="185.219.84.39:24129"
-dslink="SPZCuG4kvG">
-    <span style='color: #CC0000;'>Мир Шудаков</span> -            ◊ Лучшая Мефтика ◊
+<ServerCard ip="185.219.84.39:24129" dslink="SPZCuG4kvG"
+            icon_url="https://media.discordapp.net/attachments/1217581413126373499/1220094817632129104/photo_2024-03-20_22-06-42.jpg?ex=660db0d8&is=65fb3bd8&hm=71deb6c60c370e4540ede46aec2b3d7f0e10bfce14ab50dfa4b1001baf90a0ec&=&format=webp&width=160&height=160">
+    <span class="rainbow-text">Мир Шудаков</span>
+    - Первый в своём роде гибрид чёрного юмора и мистической тематики
 </ServerCard>

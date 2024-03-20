@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import {computed, ref} from 'vue'
 import {Icon} from "@iconify/vue";
 
-const props = defineProps(['ip', 'pagelink', 'dslink'])
+const props = defineProps(['ip', 'pagelink', 'dslink', 'icon_url'])
 
 const serverInfo = ref();
 fetch(`https://api.mcsrvstat.us/3/${props.ip}`)
@@ -14,6 +14,15 @@ function toClipboard(text: string){
   navigator.clipboard.writeText(text);
 }
 
+const serverIconUrl = computed(() => {
+  if (props.icon_url !== undefined) {
+    return props.icon_url;
+  } else if (serverInfo.value?.icon !== undefined) {
+    return serverInfo.value.icon;
+  } else {
+    return '/pack.png';
+  }
+})
 
 </script>
 
@@ -22,7 +31,7 @@ function toClipboard(text: string){
 
     <div class="flex flex-row gap-3">
       <div class="min-w-16 flex items-center rounded-lg">
-        <img :src="(serverInfo?.icon != undefined) ?  serverInfo?.icon : `/pack.png`" class="w-[64px] h-[64px] rounded-lg" alt=" ">
+        <img :src="serverIconUrl" class="w-[64px] h-[64px] rounded-lg" alt=" ">
       </div>
 
       <div class="flex flex-col">
@@ -31,8 +40,8 @@ function toClipboard(text: string){
           <div class="flex gap-2">
             <button title="Скопировать IP" @click="toClipboard(props.ip)"><Icon icon="tabler:copy" /></button>
             <a title="Больше информации" target="_blank" :href="`https://mcsrvstat.us/server/${props.ip}`"><Icon icon="tabler:info-circle" /></a>
-            <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${props['dslink']}`" v-if="props['dslink'] != undefined"><Icon icon="tabler:brand-discord" /></a>
-            <a title="Страница сервера" :href="props['pagelink']" v-if="props['pagelink'] != undefined"><Icon icon="tabler:file" /></a>
+            <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${props['dslink']}`" v-if="props['dslink'] !== undefined"><Icon icon="tabler:brand-discord" /></a>
+            <a title="Страница сервера" :href="props['pagelink']" v-if="props['pagelink'] !== undefined"><Icon icon="tabler:file" /></a>
           </div>
 
         </div>
@@ -50,9 +59,9 @@ function toClipboard(text: string){
         <span class="text-lg w-fit p-0 flex gap-1 justify-end" v-if="serverInfo?.online == true">
 
           <span class="sm:hidden">Онлайн: </span>
-          {{serverInfo?.players.online}}
+          {{serverInfo?.players?.online}}
           <span class="text-gray-400">/</span>
-          {{serverInfo?.players.max}}
+          {{serverInfo?.players?.max}}
         </span>
 
         <span class="text-lg text-red-700 font-semibold" v-else>
@@ -61,9 +70,10 @@ function toClipboard(text: string){
 
 
       </div>
-      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1" v-if="serverInfo?.online == true">
-      <span class="sm:hidden">Версия: </span>
-      <span class="mr-1">{{serverInfo?.protocol.name}}</span>
+      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1"
+           v-if="serverInfo?.protocol !== undefined">
+        <span class="sm:hidden">Версия: </span>
+        <span class="mr-1">{{serverInfo?.protocol?.name}}</span>
       </div>
     </div>
 
@@ -102,7 +112,7 @@ function toClipboard(text: string){
   padding: 10px
   margin-bottom: 10px
   outline: var(--vp-c-divider) 1px solid
-  transition: 250ms
+  transition: border-color .25s
   &:hover
     outline: var(--vp-c-brand) 1px solid
 
