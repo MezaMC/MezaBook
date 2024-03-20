@@ -26,3 +26,8 @@ comment: false
     <span style='color: #CC0000;'>UnknownDead</span> - демонический сервер.
 </ServerCard>
 
+
+<ServerCard ip="185.219.84.39:24129"
+dslink="SPZCuG4kvG">
+    <span style='color: #CC0000;'>Мир Шудаков</span> -            ◊ Лучшая Мефтика ◊
+</ServerCard>
