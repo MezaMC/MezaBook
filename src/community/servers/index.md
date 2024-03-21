@@ -42,9 +42,9 @@ comment: false
     Таинственный сервер с мистикой, содержащий в себе много неизвестного...
 </ServerCard>
 
-<ServerCard ip="198.251.89.194:20096" dslink="qEupJs53Tc">
+<ServerCard ip="198.251.89.194:20096" dslink="qEupJs53Tc" pagelink="UnknownDead">
     <span style='color: #DD0000;'>UnknownDead</span>
-    <span style='color: #990000;'> - The most terrible and demonic server.</span>
+    <span style='color: #990000;'> - Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>
 </ServerCard>
 
 <ServerCard ip="185.219.84.39:24129" dslink="SPZCuG4kvG"
