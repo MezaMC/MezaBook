@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import sidebar from "./sidebar";
+import sidebar from "./sidebar.mts";
 
 // FontAwesome Telegram icon
 const TelegramIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">' +
@@ -14,12 +14,17 @@ const TelegramIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 5
 export default defineConfig({
   lang: 'ru-RU',
   title: "MezaBook",
-  description: "Сайт о сообществе мистических Minecraft серверов",
+  description: "Сайт о русскоязычном сообществе майнкрафт мистики",
+
 
   appearance: 'force-dark',
   srcDir: 'src',
   cleanUrls: true,
   lastUpdated: true,
+
+  sitemap: {
+    hostname: 'https://book.meza.one'
+  },
 
   head: [
     ['meta', { name: 'theme-color', content: '#6eb59f' }],
@@ -27,6 +32,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'MezaBook' }],
     ['meta', {property: 'og:description', content: 'Сайт о русскоязычном сообществе майнкрафт мистики'}],
+    ['meta', {property: 'og:image', content: 'https://book.meza.one/logo/home.png'}],
     ['link', { rel: 'icon', href: '/logo/min.svg' }]
   ],
 

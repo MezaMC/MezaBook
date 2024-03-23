@@ -15,7 +15,7 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
 
 
 <template>
-  <div class="container mb-5">
+  <div class="container max-[1280px]:mt-4 min-[1280px]:mb-4">
     <span class="label mb-2">Автор статьи</span>
     <div class="user">
       <img :src="imageUrl" alt="avatar" class="avatar" v-if="imageUrl">

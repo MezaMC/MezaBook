@@ -1,6 +1,7 @@
 ---
 layout: home
-title: "Главная"
+title: OminousVoid
+tags: [ov, server]
 pageClass: ov
 footer: false
 

@@ -3,6 +3,9 @@ aside: false
 pageClass: ov
 editLink: false
 comment: false
+
+title: Информация
+tags: [ov]
 ---
 
 # OminousVoid

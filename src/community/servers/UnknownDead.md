@@ -1,4 +1,9 @@
-# UnknownDead
+---
+title: UnknownDead
+tags: [server]
+---
+
+# {{ $frontmatter.title }}
 Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ
 ԃҽɱσɳιƈ ʂҽɾʋҽɾ.
 

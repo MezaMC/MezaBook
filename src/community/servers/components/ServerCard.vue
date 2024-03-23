@@ -107,7 +107,7 @@ const serverIconUrl = computed(() => {
 
 
 .card
-  background: transparent
+  background: var(--vp-c-bg)
   border-radius: 10px
   padding: 10px
   margin-bottom: 10px

@@ -2,9 +2,12 @@
 pageClass: ov
 editLink: false
 comment: false
+
+title: Паранормальные явления
+tags: [ov]
 ---
 
-# Паранормальные явления
+# {{ $frontmatter.title }}
 ::: danger :no_entry: Сейчас существа не проявляют себя
 Возможно, грядущее событие освободит их.
 :::

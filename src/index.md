@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Главная
 
 hero:
   name: "MezaBook"
@@ -8,7 +9,7 @@ hero:
   image: /logo/home.svg
   actions:
     - theme: alt
-      text: 📖 О сообществе
+      text: 📖 О MezaBook
       link: /info/
     - theme: alt
       text: 𖤐 OminousVoid
@@ -42,7 +43,7 @@ features:
 ---
 
 <script setup>
-    import HomeContent from "./HomeContent.vue";
+    import HomeContent from "/components/HomeContent.vue";
 </script>
 
 <HomeContent />

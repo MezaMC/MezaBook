@@ -95,6 +95,10 @@ export default {
             {
                 text: 'Создание своей вики',
                 link: '/info/creating-wiki'
+            },
+            {
+                text: 'Теги',
+                link: '/info/tags'
             }
         ]
     }]

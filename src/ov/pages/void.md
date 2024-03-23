@@ -2,9 +2,11 @@
 pageClass: ov
 editLink: false
 comment: false
+title: Мир пустоты
+tags: [ov]
 ---
 
-# Мир пустоты
+# {{ $frontmatter.title }}
 Чтобы попасть в мир пустоты, напишите команду `/void`.
 
 ## Элитры

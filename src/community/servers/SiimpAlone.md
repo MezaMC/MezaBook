@@ -4,7 +4,7 @@ editLink: false
 ---
 
 <script setup>
-    import WIP from '/WIP.vue'
+    import WIP from '/components/WIP.vue'
 </script>
 
 <WIP></WIP>

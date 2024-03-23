@@ -2,9 +2,12 @@
 pageClass: ov
 editLink: false
 comment: false
+
+title: Особенности чата
+tags: [ov]
 ---
 
-# Особенности чата
+# {{ $frontmatter.title }}
 
 ## Discord
 На [Discord сервере OminousVoid](https://ds.ominousvoid.net) есть канал [`#minecraft-чат`](https://discord.com/channels/1072864906522669086/1130503611126911127).

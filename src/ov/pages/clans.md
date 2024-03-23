@@ -2,9 +2,12 @@
 pageClass: ov
 editLink: false
 comment: false
+
+title: Кланы
+tags: [ov]
 ---
 
-# Кланы
+# {{ $frontmatter.title }}
 ::: danger :no_entry: Кланы удалены
 В скором времени будет добавлена альтернатива.
 :::

@@ -2,6 +2,9 @@
 pageClass: ov
 editLink: false
 comment: false
+
+title: Обновления
+tags: [ov]
 ---
 
 <style lang="sass">
