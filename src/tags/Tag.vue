@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import tags_data from './tags.mts';
 import { Icon } from '@iconify/vue';
-import {useRouter} from "vitepress";
 
 const props = defineProps<{
   tag: string

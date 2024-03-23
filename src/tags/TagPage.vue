@@ -6,7 +6,7 @@ const props = defineProps<{
 import {data as pages} from './pages.data.mts'
 import tags_data from './tags.mts'
 let tags = Object.keys(tags_data)
-import {computed, ref} from "vue";
+import {computed} from "vue";
 import Tag from "./Tag.vue";
 
 const display_pages = computed(() => {

@@ -1,5 +1,4 @@
 <script setup>
-import { Icon } from '@iconify/vue';
 import Feature from "./Feature.vue";
 </script>
 
