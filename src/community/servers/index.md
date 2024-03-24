@@ -3,10 +3,6 @@ aside: true
 comment: false
 ---
 
-<script setup>
-    import ServerCard from "./components/ServerCard.vue";
-    import {Icon} from "@iconify/vue";
-</script>
 <style scoped>
     .rainbow-text {
     background: linear-gradient(80deg,

@@ -6,13 +6,16 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import './css/style.scss'
 import './css/custom.scss'
 import './css/ov-theme.scss'
-import MyLayout from "./MyLayout.vue";
+import Layout from "./Layout.vue";
+import ServerCard from "./components/ServerCard.vue";
+import {Icon} from "@iconify/vue";
 
 export default {
   extends: DefaultTheme,
-  Layout: MyLayout,
+  Layout: Layout,
   enhanceApp({ app, router, siteData }) {
-    // ...
+      app.component('ServerCard', ServerCard);
+      app.component('Icon', Icon);
   },
   setup() {
     // Get frontmatter and route
