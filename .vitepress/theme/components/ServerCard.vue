@@ -5,7 +5,7 @@ import {Icon} from "@iconify/vue";
 const props = defineProps(['ip', 'pagelink', 'dslink', 'icon_url'])
 
 const serverInfo = ref();
-fetch(`https://api.mcsrvstat.us/3/${props.ip}`)
+fetch(`https://api.mcstatus.io/v2/status/java/${props.ip}`)
     .then(resp => resp.json())
     .then(data => serverInfo.value = data)
     .catch(() => {});
@@ -17,7 +17,7 @@ function toClipboard(text: string){
 const serverIconUrl = computed(() => {
   if (props.icon_url !== undefined) {
     return props.icon_url;
-  } else if (serverInfo.value?.icon !== undefined) {
+  } else if (serverInfo.value?.icon) {
     return serverInfo.value.icon;
   } else {
     return '/pack.png';
@@ -70,11 +70,11 @@ const serverIconUrl = computed(() => {
 
 
       </div>
-      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1"
-           v-if="serverInfo?.protocol !== undefined">
-        <span class="sm:hidden">Версия: </span>
-        <span class="mr-1">{{serverInfo?.protocol?.name}}</span>
-      </div>
+<!--      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1"-->
+<!--           v-if="serverInfo?.protocol !== undefined">-->
+<!--        <span class="sm:hidden">Версия: </span>-->
+<!--        <span class="mr-1">{{serverInfo?.protocol?.name}}</span>-->
+<!--      </div>-->
     </div>
 
   </div>

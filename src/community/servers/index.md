@@ -59,4 +59,9 @@ IP сервера и его краткое описание.
     <span class="rainbow-text">Мир Шудаков</span>
     - Первый в своём роде гибрид чёрного юмора и мистической тематики
 </ServerCard>
+
+<ServerCard ip="65.108.207.28:10154" dslink="hcKq2TPJhz">
+    <span class="text-blue-500">SurvivalHome</span>
+    » Уютный сервер для выживания!
+</ServerCard>
 :::
