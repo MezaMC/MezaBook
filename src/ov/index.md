@@ -20,7 +20,7 @@ hero:
       link: /ov/rules
     - theme: alt
       text: Discord
-      link: /ov/rules
+      link: https://discord.gg/8C6kYDGaUX
 
 features:
   - title: <span class='emoji'>︎𒄆</span> Стабильность
