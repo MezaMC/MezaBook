@@ -4,7 +4,7 @@ const props = defineProps<{
 }>()
 
 import {data as pages} from './pages.data.mts'
-import tags_data from './tags.mts'
+import tags_data from './tags'
 let tags = Object.keys(tags_data)
 import {computed} from "vue";
 import Tag from "./Tag.vue";
