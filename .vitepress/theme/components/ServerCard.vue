@@ -1,22 +1,27 @@
 <script setup lang="ts">
 import {computed, ref} from 'vue'
 import {Icon} from "@iconify/vue";
+import {toast, Toaster} from "vue-sonner";
+import {Server, servers} from "../../../src/community/servers/servers";
 
-const props = defineProps(['ip', 'pagelink', 'dslink', 'icon_url'])
+// Считываем название сервера из параметра и вытаскиваем его из списка всех серверов
+const props = defineProps(['server'])
+const server: Server = servers[props.server]
 
 const serverInfo = ref();
-fetch(`https://api.mcstatus.io/v2/status/java/${props.ip}`)
+fetch(`https://api.mcsrvstat.us/3/${server.ip}`)
     .then(resp => resp.json())
     .then(data => serverInfo.value = data)
     .catch(() => {});
 
 function toClipboard(text: string){
   navigator.clipboard.writeText(text);
+  toast.success(`${text} скопировано в буфер обмена.`);
 }
 
 const serverIconUrl = computed(() => {
-  if (props.icon_url !== undefined) {
-    return props.icon_url;
+  if (server.icon !== undefined) {
+    return server.icon;
   } else if (serverInfo.value?.icon) {
     return serverInfo.value.icon;
   } else {
@@ -27,7 +32,8 @@ const serverIconUrl = computed(() => {
 </script>
 
 <template>
-  <div class="card flex flex-col sm:flex-row items-start justify-between">
+
+  <div class="card flex flex-col sm:flex-row items-start justify-between" v-if="server">
 
     <div class="flex flex-row gap-3">
       <div class="min-w-16 flex items-center rounded-lg">
@@ -36,17 +42,17 @@ const serverIconUrl = computed(() => {
 
       <div class="flex flex-col">
         <div class="ip text-xl flex sm:flex-row flex-col sm:items-center sm:gap-3">
-          {{ props.ip }}
+          {{ server.ip }}
           <div class="flex gap-2">
-            <button title="Скопировать IP" @click="toClipboard(props.ip)"><Icon icon="tabler:copy" /></button>
-            <a title="Больше информации" target="_blank" :href="`https://mcsrvstat.us/server/${props.ip}`"><Icon icon="tabler:info-circle" /></a>
-            <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${props['dslink']}`" v-if="props['dslink'] !== undefined"><Icon icon="tabler:brand-discord" /></a>
-            <a title="Страница сервера" :href="props['pagelink']" v-if="props['pagelink'] !== undefined"><Icon icon="tabler:file" /></a>
+            <button title="Скопировать IP" @click="toClipboard(server.ip)"><Icon icon="tabler:copy" /></button>
+            <a title="Больше информации" target="_blank" :href="`https://mcsrvstat.us/server/${server.ip}`"><Icon icon="tabler:info-circle" /></a>
+            <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${server.discord}`" v-if="server.discord !== undefined"><Icon icon="tabler:brand-discord" /></a>
+            <a title="Страница сервера" :href="server.page" v-if="server.page !== undefined"><Icon icon="tabler:file" /></a>
           </div>
 
         </div>
         <div class="desc text-lg max-w-lg min-w-0 leading-5 text-gray-400">
-          <slot></slot>
+          <span v-html="server.desc" v-if="server.desc"></span>
         </div>
       </div>
     </div>
@@ -70,11 +76,11 @@ const serverIconUrl = computed(() => {
 
 
       </div>
-<!--      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1"-->
-<!--           v-if="serverInfo?.protocol !== undefined">-->
-<!--        <span class="sm:hidden">Версия: </span>-->
-<!--        <span class="mr-1">{{serverInfo?.protocol?.name}}</span>-->
-<!--      </div>-->
+      <div class="flex items-center justify-end gap-1 text-lg sm:mt-0 mt-1 text-gray-500"
+           v-if="serverInfo?.protocol !== undefined">
+        <span class="sm:hidden">Версия: </span>
+        <span class="mr-1">{{serverInfo?.protocol?.name}}</span>
+      </div>
     </div>
 
   </div>

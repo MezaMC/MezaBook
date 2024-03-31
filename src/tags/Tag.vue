@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import tags_data from './tags.mts';
+import tags_data from './tags';
 import { Icon } from '@iconify/vue';
 
 const props = defineProps<{

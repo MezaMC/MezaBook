@@ -1,9 +1,11 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import PageInfo from "./PageInfo.vue";
-import Tags from "./Tags.vue";
+import PageInfo from "./components/PageInfo.vue";
+import Tags from "./components/Tags.vue";
 import {useData} from "vitepress";
 import { useWindowSize } from '@vueuse/core'
+import { Toaster } from 'vue-sonner'
+
 
 const { width, height } = useWindowSize()
 
@@ -13,6 +15,10 @@ const { frontmatter } = useData()
 
 <template>
   <Layout>
+
+    <template #layout-top>
+      <Toaster theme="dark" position="bottom-right" />
+    </template>
 
     <template #sidebar-nav-before >
       <PageInfo v-if="frontmatter['author'] && width < 1280" />

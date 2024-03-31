@@ -4,7 +4,7 @@ comment: false
 
 <script setup>
     import Tag from '/tags/Tag.vue'
-    import tags from '/tags/tags.mts'
+    import tags from '/tags/tags.ts'
 </script>
 
 # Теги
@@ -58,7 +58,7 @@ tags: [server]
 :warning: Не забудте указать `title`.
 
 ## Как создать собственный тег
-Добавьте объект тега в `/src/tags/tags.mts`:
+Добавьте объект тега в `/src/tags/tags.ts`:
 
 ```ts
 // ...

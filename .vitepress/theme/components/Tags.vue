@@ -1,6 +1,6 @@
 <script setup>
 import {useData} from "vitepress";
-import Tag from "../../src/tags/Tag.vue";
+import Tag from "../../../src/tags/Tag.vue";
 
 const { frontmatter } = useData()
 </script>

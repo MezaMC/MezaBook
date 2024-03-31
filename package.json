@@ -16,6 +16,7 @@
   "dependencies": {
     "@vueuse/core": "^10.9.0",
     "typescript": "^5.4.3",
-    "vitepress-plugin-comment-with-giscus": "^1.1.12"
+    "vitepress-plugin-comment-with-giscus": "^1.1.12",
+    "vue-sonner": "^1.1.2"
   }
 }

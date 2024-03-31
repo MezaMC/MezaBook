@@ -1,7 +1,7 @@
 // packages/[pkg].paths.js
 
 //    {params: { tag: 'xxx' }}
-import tags from './tags.mjs'
+import tags from './tags'
 
 export default {
     paths() {

@@ -14,6 +14,9 @@ dependencies:
   vitepress-plugin-comment-with-giscus:
     specifier: ^1.1.12
     version: 1.1.12(vue@3.4.21)
+  vue-sonner:
+    specifier: ^1.1.2
+    version: 1.1.2
 
 devDependencies:
   '@iconify/vue':
@@ -1842,6 +1845,10 @@ packages:
         optional: true
     dependencies:
       vue: 3.4.21(typescript@5.4.3)
+
+  /vue-sonner@1.1.2:
+    resolution: {integrity: sha512-yg4f5s0a3oiiI7cNvO0Dajux1Y7s04lxww3vnQtnwQawJ3KqaKA9RIRMdI9wGTosRGIOwgYFniFRGl4+IuKPZw==}
+    dev: false
 
   /vue@3.4.21(typescript@5.4.3):
     resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}
