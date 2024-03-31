@@ -29,6 +29,8 @@ const serverIconUrl = computed(() => {
   }
 })
 
+let outline_hover_color = `${server.outline_color ?? 'var(--vp-c-brand)'} 1px solid`
+
 </script>
 
 <template>
@@ -118,9 +120,9 @@ const serverIconUrl = computed(() => {
   padding: 10px
   margin-bottom: 10px
   outline: var(--vp-c-divider) 1px solid
-  transition: border-color .25s
+  transition: outline-color .25s
   &:hover
-    outline: var(--vp-c-brand) 1px solid
+    outline: v-bind(outline_hover_color)
 
 .indicator
   &.offline

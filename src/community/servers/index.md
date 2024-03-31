@@ -36,6 +36,8 @@ comment: false
 
 <ServerCard server="trinity_server" />
 
+<ServerCard server="red_union" />
+
 <ServerCard server="mythic_casual" />
 
 ::: details :inbox_tray: Как добавить свой сервер
