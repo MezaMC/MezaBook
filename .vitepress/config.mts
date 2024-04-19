@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import sidebar from "./sidebar.mts";
+import UnoCSS from 'unocss/vite';
 
 // FontAwesome Telegram icon
 const TelegramIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">' +
@@ -16,6 +17,11 @@ export default defineConfig({
   title: "MezaBook",
   description: "Сайт о русскоязычном сообществе майнкрафт мистики",
 
+  vite: {
+	plugins: [
+		UnoCSS(),
+	  ],
+  },
 
   appearance: 'force-dark',
   srcDir: 'src',
