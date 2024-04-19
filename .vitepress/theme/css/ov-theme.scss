@@ -31,7 +31,7 @@
 
     // Кастомный фон home страницы
     &:has(.VPHome) {
-        background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.7)), url("/bg_.png") no-repeat fixed center;
+        background: black;
         background-size: cover;
     }
 
