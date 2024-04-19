@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "@iconify/vue": "^4.1.1",
+    "@iconify/vue": "^4.1.2",
+    "@unocss/postcss": "^0.59.4",
+    "@unocss/preset-attributify": "^0.59.4",
     "autoprefixer": "^10.4.19",
     "sass": "^1.72.0",
     "unocss": "^0.59.4",
