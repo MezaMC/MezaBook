@@ -6,6 +6,7 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import './css/style.scss'
 import './css/custom.scss'
 import './css/ov-theme.scss'
+import 'virtual:uno.css'
 import Layout from "./Layout.vue";
 import ServerCard from "./components/ServerCard.vue";
 import {Icon} from "@iconify/vue";

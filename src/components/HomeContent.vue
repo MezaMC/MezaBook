@@ -3,7 +3,7 @@ import Feature from "./Feature.vue";
 </script>
 
 <template>
-  <div class="slogan">
+  <div class="slogan transition">
     <span class="slogan-header">Быстро · Красиво · Практично</span>
     <span class="slogan-main">Центр сообщества мистики Minecraft</span>
     <span class="slogan-footer">MezaBook позволяет каждому делиться своими работами с сообществом. Наша цель - объединение комьюнити</span>
