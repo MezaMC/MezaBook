@@ -4,23 +4,8 @@ comment: false
 ---
 
 <style scoped>
-    .rainbow-text {
-    background: linear-gradient(80deg,
-    hsl(0, 100%, 50%),
-    hsl(30, 100%, 50%),
-    hsl(60, 100%, 50%),
-    hsl(90, 100%, 50%),
-    hsl(120, 100%, 50%),
-    hsl(150, 100%, 50%),
-    hsl(180, 100%, 50%),
-    hsl(210, 100%, 50%),
-    hsl(270, 100%, 50%),
-    hsl(300, 100%, 50%),
-    hsl(330, 100%, 50%),
-    hsl(360, 100%, 50%)
-    ), #FFFFFF44;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.grad-warped {
+	@apply text-gray-100;
 }
 </style>
 
@@ -30,13 +15,13 @@ comment: false
 
 <ServerCard server="wadner_server" />
 
-<ServerCard server="orbitium" />
-
-<ServerCard server="unknown_dead" />
-
 <ServerCard server="trinity_server" />
 
+<ServerCard server="warped_redux" />
+
 <ServerCard server="red_union" />
+
+<ServerCard server="unknown_dead" />
 
 <ServerCard server="mythic_casual" />
 

@@ -9,7 +9,9 @@ const props = defineProps(['server'])
 const server: Server = servers[props.server]
 
 const serverInfo = ref();
-fetch(`https://api.mcsrvstat.us/3/${server.ip}`)
+const api_url = (server.alt_api ?? false) ? `https://api.mcstatus.io/v2/status/java/` : `https://api.mcsrvstat.us/3/`
+const status_url = (server.alt_api ?? false) ? `https://mcstatus.io/status/java/` : `https://mcsrvstat.us/server/`
+fetch(`${api_url}${server.ip}`)
     .then(resp => resp.json())
     .then(data => serverInfo.value = data)
     .catch(() => {});
@@ -47,7 +49,7 @@ let outline_hover_color = `${server.outline_color ?? 'var(--vp-c-brand)'} 1px so
           {{ server.ip }}
           <div class="flex gap-2">
             <button title="Скопировать IP" @click="toClipboard(server.ip)"><Icon icon="tabler:copy" /></button>
-            <a title="Больше информации" target="_blank" :href="`https://mcsrvstat.us/server/${server.ip}`"><Icon icon="tabler:info-circle" /></a>
+            <a title="Больше информации" target="_blank" :href="`${status_url}${server.ip}`"><Icon icon="tabler:info-circle" /></a>
             <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${server.discord}`" v-if="server.discord !== undefined"><Icon icon="tabler:brand-discord" /></a>
             <a title="Страница сервера" :href="server.page" v-if="server.page !== undefined"><Icon icon="tabler:file" /></a>
           </div>

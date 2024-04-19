@@ -5,6 +5,7 @@ export interface Server {
     discord?: string
     page?: string
     outline_color?: string
+	alt_api?: boolean
 }
 
 export const servers: { [name: string]: Server } = {
@@ -20,12 +21,6 @@ export const servers: { [name: string]: Server } = {
         desc: `<span style='color: #CC0000;'>Wadner server</span>`,
         discord: '8BdbfEKNHE',
         outline_color: '#8caaa5'
-    },
-    orbitium: {
-        ip: 'orbitium.online',
-        desc: `Таинственный сервер с мистикой, содержащий в себе много неизвестного...`,
-        discord: 'orbitium',
-        outline_color: '#6757a8'
     },
     unknown_dead: {
         ip: '198.251.89.194:20096',
@@ -45,7 +40,8 @@ export const servers: { [name: string]: Server } = {
         ip: '46.4.17.189:25047',
         desc: `<span class="text-blue-500">SurvivalHome</span> » Уютный сервер для выживания!`,
         discord: 'hcKq2TPJhz',
-        outline_color: '#468fe4'
+        outline_color: '#468fe4',
+		alt_api: true
     },
     red_union: {
         ip: 'millerium.world',
@@ -58,5 +54,16 @@ export const servers: { [name: string]: Server } = {
         desc: `<span class="text-gray-100">Mythic Casual</span> - Необычный мистический сервер с испытаниями и артефактами`,
         discord: 'mythiccasual',
         outline_color: 'gray'
-    }
+    },
+	warped_redux: {
+		ip: 'WarpedRedux.online',
+		desc: `<style scoped>.grad-warped{background: linear-gradient(90deg, #3cff57, #00CDAC);}
+		.grad-redux{background: linear-gradient(90deg, #FFB000, #D9924F);}
+		.text-clip{-webkit-background-clip: text; -webkit-text-fill-color: transparent;}</style>
+		<span class="grad-warped text-clip">Warped</span><span class="grad-redux text-clip">Redux</span> 
+		- возвращение легендарного мистического сервера. Новая история, новые возможности`,
+		alt_api: true,
+		outline_color: `#00cdac`,
+		discord: 'Q69FqG47xw'
+	}
 }

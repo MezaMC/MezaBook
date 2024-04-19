@@ -8,7 +8,7 @@ export default defineConfig({
 		],
 	},
 	presets: [
-		presetUno({}),
-		presetAttributify({})
+		presetUno(),
+		presetAttributify()
 	]
 })
