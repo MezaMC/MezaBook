@@ -1,2 +1,2 @@
-Sitemap: http://example.com/sitemap.xml
+Sitemap: http://book.meza.one/sitemap.xml
 User-agent: *
