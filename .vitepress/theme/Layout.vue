@@ -31,6 +31,7 @@ const { frontmatter } = useData()
     <template #doc-footer-before>
       <Tags v-if="frontmatter['tags']" />
     </template>
+
   </Layout>
 </template>
 

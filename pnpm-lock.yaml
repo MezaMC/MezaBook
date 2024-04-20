@@ -33,6 +33,9 @@ importers:
       '@unocss/preset-attributify':
         specifier: ^0.59.4
         version: 0.59.4
+      '@unocss/transformer-variant-group':
+        specifier: ^0.59.4
+        version: 0.59.4
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -42,6 +45,9 @@ importers:
       unocss:
         specifier: ^0.59.4
         version: 0.59.4(postcss@8.4.38)(rollup@4.13.0)(vite@5.2.4(sass@1.72.0))
+      unocss-preset-animations:
+        specifier: ^1.0.2
+        version: 1.0.2(@unocss/preset-wind@0.59.4)(unocss@0.59.4(postcss@8.4.38)(rollup@4.13.0)(vite@5.2.4(sass@1.72.0)))
       vitepress:
         specifier: 1.0.1
         version: 1.0.1(@algolia/client-search@4.22.1)(postcss@8.4.38)(sass@1.72.0)(search-insights@2.13.0)(typescript@5.4.3)
@@ -1235,6 +1241,12 @@ packages:
 
   unconfig@0.3.13:
     resolution: {integrity: sha512-N9Ph5NC4+sqtcOjPfHrRcHekBCadCXWTBzp2VYYbySOHW0PfD9XLCeXshTXjkPYwLrBr9AtSeU0CZmkYECJhng==}
+
+  unocss-preset-animations@1.0.2:
+    resolution: {integrity: sha512-AacFdOvHwvKZKqjn9/paKQ50LmU0qk4n6350/toQcSX3XEQIE7rTZwm/68Aag5jP2Z8M4Y8IvDf8Q7Qc0MNdTw==}
+    peerDependencies:
+      '@unocss/preset-wind': '>= 0.56.0 < 1'
+      unocss: '>= 0.56.0 < 1'
 
   unocss@0.59.4:
     resolution: {integrity: sha512-QmCVjRObvVu/gsGrJGVt0NnrdhFFn314BUZn2WQyXV9rIvHLRmG5bIu0j5vibJkj7ZhFchTrnTM1pTFXP1xt5g==}
@@ -2576,6 +2588,11 @@ snapshots:
       '@antfu/utils': 0.7.7
       defu: 6.1.4
       jiti: 1.21.0
+
+  unocss-preset-animations@1.0.2(@unocss/preset-wind@0.59.4)(unocss@0.59.4(postcss@8.4.38)(rollup@4.13.0)(vite@5.2.4(sass@1.72.0))):
+    dependencies:
+      '@unocss/preset-wind': 0.59.4
+      unocss: 0.59.4(postcss@8.4.38)(rollup@4.13.0)(vite@5.2.4(sass@1.72.0))
 
   unocss@0.59.4(postcss@8.4.38)(rollup@4.13.0)(vite@5.2.4(sass@1.72.0)):
     dependencies:

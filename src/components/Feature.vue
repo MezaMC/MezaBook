@@ -7,7 +7,7 @@ const props = defineProps(['icon', 'title'])
   <div class="feature">
     <div class="flex items-center gap-2.5" >
       <div class="icon">
-        <Icon :icon="props.icon" class="text-2xl md:text-3xl"></Icon>
+        <Icon :icon="props.icon" class="text-2xl"></Icon>
       </div>
       <span class="text-lg md:text-2xl font-medium">
         {{props.title}}
