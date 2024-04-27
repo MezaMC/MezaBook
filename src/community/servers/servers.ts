@@ -17,7 +17,7 @@ export const servers: { [name: string]: Server } = {
         outline_color: '#ccc7e1'
     },
     wadner_server: {
-        ip: '51.77.93.194:20444',
+        ip: '212.80.7.202:20444',
         desc: `<span style='color: #CC0000;'>Wadner server</span>`,
         discord: '8BdbfEKNHE',
         outline_color: '#8caaa5'
