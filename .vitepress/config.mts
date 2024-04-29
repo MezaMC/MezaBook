@@ -82,7 +82,7 @@ export default defineConfig({
 
     sidebarMenuLabel: 'Меню',
     darkModeSwitchLabel: 'Режим',
-    returnToTopLabel: 'Вернуться верх',
+    returnToTopLabel: 'Наверх',
     docFooter: {
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
