@@ -15,6 +15,8 @@ comment: false
 
 <ServerCard server="red_union" />
 
+<ServerCard server="warped_redux" />
+
 <ServerCard server="unknown_dead" />
 
 <ServerCard server="mythic_casual" />
@@ -31,6 +33,4 @@ IP сервера и его краткое описание.
 ::: details :package: Другие сервера
 Сервера, которые не полностью соответствуют мистической тематике.
 <ServerCard server="survival_home" />
-
-<ServerCard server="warped_redux" />
 :::
