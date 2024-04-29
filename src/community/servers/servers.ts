@@ -1,10 +1,14 @@
 export interface Server {
-    ip: string
-    desc: string
-    icon?: string
-    discord?: string
-    page?: string
-    outline_color?: string
+	ip: string
+	desc: string
+	icon?: string
+
+	discord?: string
+	page?: string
+	youtube?: string
+	website?: string
+
+	outline_color?: string
 	alt_api?: boolean
 }
 
@@ -65,5 +69,14 @@ export const servers: { [name: string]: Server } = {
 		alt_api: true,
 		outline_color: `#00cdac`,
 		discord: 'Q69FqG47xw'
+	},
+	ramu_inc: {
+		ip: '212.80.7.203:20000',
+		desc: `<span class="text-red-200 font-extrabold tracking-widest">モノストラム</span>`,
+		icon: `/server-icons/ramu-inc.png`,
+		youtube: `@Shijuni`,
+		website: `https://nihoninside.pages.dev`,
+		discord: `TmpmjpEvQu`,
+		outline_color: `rgb(224 162 162)`
 	}
 }

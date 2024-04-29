@@ -15,7 +15,7 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
 
 
 <template>
-  <div class="container max-[1280px]:mt-4 min-[1280px]:mb-4">
+  <div class="container lt-xl:mt-4 xl:mb-4">
     <span class="label mb-2">Автор статьи</span>
     <div class="user">
       <img :src="imageUrl" alt="avatar" class="avatar" v-if="imageUrl">
@@ -48,7 +48,7 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
     align-items: center;
     display: flex;
     margin-bottom: 6px;
-    overflow: scroll;
+    overflow: auto;
 
     .link {
       text-decoration: underline;

@@ -5,11 +5,11 @@
     "@unocss/preset-attributify": "^0.59.4",
     "@unocss/transformer-variant-group": "^0.59.4",
     "autoprefixer": "^10.4.19",
-    "sass": "^1.72.0",
+    "sass": "^1.75.0",
     "unocss": "^0.59.4",
     "unocss-preset-animations": "^1.0.2",
-    "vitepress": "1.0.1",
-    "vue": "^3.4.21"
+    "vitepress": "1.1.4",
+    "vue": "^3.4.26"
   },
   "scripts": {
     "dev": "vitepress dev",
@@ -19,8 +19,8 @@
   "dependencies": {
     "@vueuse/core": "^10.9.0",
     "postcss": "^8.4.38",
-    "typescript": "^5.4.3",
-    "vitepress-plugin-comment-with-giscus": "^1.1.12",
+    "typescript": "^5.4.5",
+    "vitepress-plugin-comment-with-giscus": "^1.1.14",
     "vue-sonner": "^1.1.2"
   }
 }

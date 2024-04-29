@@ -51,7 +51,9 @@ let outline_hover_color = `${server.outline_color ?? 'var(--vp-c-brand)'} 1px so
             <button title="Скопировать IP" @click="toClipboard(server.ip)"><Icon icon="tabler:copy" /></button>
             <a title="Больше информации" target="_blank" :href="`${status_url}${server.ip}`"><Icon icon="tabler:info-circle" /></a>
             <a title="Discord сервер" target="_blank" :href="`https://discord.gg/${server.discord}`" v-if="server.discord !== undefined"><Icon icon="tabler:brand-discord" /></a>
-            <a title="Страница сервера" :href="server.page" v-if="server.page !== undefined"><Icon icon="tabler:file" /></a>
+            <a title="Статья/страница на MezaBook" :href="server.page" v-if="server.page !== undefined"><Icon icon="tabler:file" /></a>
+			<a title="Сайт проекта" :href="server.website" v-if="server.website !== undefined"><Icon icon="tabler:world" /></a>
+			<a title="YouTube канал" :href="`https://www.youtube.com/${server.youtube}`" v-if="server.youtube !== undefined"><Icon icon="tabler:brand-youtube" /></a>
           </div>
 
         </div>

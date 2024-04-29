@@ -3,21 +3,15 @@ aside: true
 comment: false
 ---
 
-<style scoped>
-.grad-warped {
-	@apply text-gray-100;
-}
-</style>
-
 # Мистические сервера
 
 <ServerCard server="ominous_void" />
 
 <ServerCard server="wadner_server" />
 
-<ServerCard server="trinity_server" />
+<ServerCard server="ramu_inc" />
 
-<ServerCard server="warped_redux" />
+<ServerCard server="trinity_server" />
 
 <ServerCard server="red_union" />
 
@@ -37,4 +31,6 @@ IP сервера и его краткое описание.
 ::: details :package: Другие сервера
 Сервера, которые не полностью соответствуют мистической тематике.
 <ServerCard server="survival_home" />
+
+<ServerCard server="warped_redux" />
 :::
