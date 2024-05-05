@@ -30,7 +30,8 @@ export default defineConfig({
 				'main': 'var(--vp-c-brand-1)',
 				'grim': 'var(--vp-c-brand-2)',
 				'dark': 'var(--vp-c-brand-3)',
-				'soft': 'var(--vp-c-brand-soft)'
+				'soft': 'var(--vp-c-brand-soft)',
+				'ptg': 'rgb(225, 29, 72)'
 			},
 			'bg': {
 				'main': 'var(--vp-c-bg)',
@@ -42,6 +43,9 @@ export default defineConfig({
 				'1': 'var(--vp-c-text-1)',
 				'2': 'var(--vp-c-text-2)',
 				'3': 'var(--vp-c-text-3)',
+			},
+			'p2g': {
+				'main': '#FF0000'
 			}
 		}
 	}

@@ -1,8 +1,8 @@
 ---
-aside: false
 pageClass: ov
 editLink: false
 comment: false
+p2gad: true
 
 title: Информация
 tags: [ov]
@@ -15,7 +15,8 @@ Minecraft сервер, главная особенность которого -
 ## Информация для подключения
 ```ansi
 Domain: OminousVoid.net, ov.meza.one
-IPv4: 51.75.57.78:25565
+IPv4: 212.80.7.4
+Provider: PLAY2GO LTD
 Version: 1.19.4 - 1.20.4
 Protocol: 762 - 765
 License: Not required, Supported

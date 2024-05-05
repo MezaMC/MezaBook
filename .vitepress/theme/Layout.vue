@@ -5,6 +5,7 @@ import Tags from "./components/Tags.vue";
 import {useData} from "vitepress";
 import { useWindowSize } from '@vueuse/core'
 import { Toaster } from 'vue-sonner'
+import P2G from './components/P2G.vue';
 
 
 const { width, height } = useWindowSize()
@@ -26,6 +27,10 @@ const { frontmatter } = useData()
 
     <template #aside-outline-before >
       <PageInfo v-if="frontmatter['author'] && width >= 1280" />
+    </template>
+
+	<template #aside-ads-after >
+      <P2G v-if="frontmatter['p2gad'] === true" />
     </template>
 
     <template #doc-footer-before>

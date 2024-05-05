@@ -1,6 +1,7 @@
 ---
 aside: true
 comment: false
+p2gad: true
 ---
 
 # Мистические сервера
