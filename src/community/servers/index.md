@@ -17,6 +17,8 @@ comment: false
 
 <ServerCard server="warped_redux" />
 
+<ServerCard server="nightmarish" />
+
 <ServerCard server="unknown_dead" />
 
 <ServerCard server="mythic_casual" />

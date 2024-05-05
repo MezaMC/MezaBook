@@ -78,5 +78,11 @@ export const servers: { [name: string]: Server } = {
 		website: `https://nihoninside.pages.dev`,
 		discord: `TmpmjpEvQu`,
 		outline_color: `rgb(224 162 162)`
+	},
+	nightmarish: {
+		ip: 'nightmarish.space',
+		desc: 'Всегда проверяйте, не в кошмаре ли вы...',
+		discord: 'cHQuy4cnYn',
+		outline_color: '#cc0000'
 	}
 }
