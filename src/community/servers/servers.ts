@@ -34,30 +34,12 @@ export const servers: { [name: string]: Server } = {
         page: `/community/servers/UnknownDead`,
         outline_color: '#DD0000'
     },
-    trinity_server: {
-        ip: '65.109.38.94:20619',
-        desc: `<span style='color: #bea674;'>Trinity Server</span> - Загадочный серверный мир, открытый Троицей.`,
-        discord: 'Kt7d6nx3Cr',
-        outline_color: '#bea674'
-    },
     survival_home: {
         ip: '46.4.17.189:25047',
         desc: `<span class="text-blue-500">SurvivalHome</span> » Уютный сервер для выживания!`,
         discord: 'hcKq2TPJhz',
         outline_color: '#468fe4',
 		alt_api: true
-    },
-    red_union: {
-        ip: 'millerium.world',
-        desc: `<span class="text-[#CC0000] font-bold">Red Union</span>`,
-        discord: 'GfHMvvWtRF',
-        outline_color: '#CC0000'
-    },
-    mythic_casual: {
-        ip: '138.201.122.104:24093',
-        desc: `<span class="text-gray-100">Mythic Casual</span> - Необычный мистический сервер с испытаниями и артефактами`,
-        discord: 'mythiccasual',
-        outline_color: 'gray'
     },
 	warped_redux: {
 		ip: 'WarpedRedux.online',
@@ -69,15 +51,6 @@ export const servers: { [name: string]: Server } = {
 		alt_api: true,
 		outline_color: `#00cdac`,
 		discord: 'Q69FqG47xw'
-	},
-	ramu_inc: {
-		ip: '212.80.7.203:20000',
-		desc: `<span class="text-red-200 font-extrabold tracking-widest">モノストラム</span>`,
-		icon: `/server-icons/ramu-inc.png`,
-		youtube: `@Shijuni`,
-		website: `https://nihoninside.pages.dev`,
-		discord: `TmpmjpEvQu`,
-		outline_color: `rgb(224 162 162)`
 	},
 	nightmarish: {
 		ip: 'nightmarish.space',
