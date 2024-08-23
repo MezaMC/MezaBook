@@ -7,7 +7,6 @@ import { useWindowSize } from '@vueuse/core'
 import { Toaster } from 'vue-sonner'
 import P2G from './components/P2G.vue';
 
-
 const { width, height } = useWindowSize()
 
 const { Layout } = DefaultTheme
@@ -22,11 +21,11 @@ const { frontmatter } = useData()
     </template>
 
     <template #sidebar-nav-before >
-      <PageInfo v-if="frontmatter['author'] && width < 1280" />
+      <PageInfo v-if="frontmatter['authors'] && width < 1280" class="lt-hidesidebar:mb-4 hidesidebar:mt-4" />
     </template>
 
     <template #aside-outline-before >
-      <PageInfo v-if="frontmatter['author'] && width >= 1280" />
+      <PageInfo v-if="frontmatter['authors'] && width >= 1280" class="mb-4" />
     </template>
 
 	<template #aside-ads-after >

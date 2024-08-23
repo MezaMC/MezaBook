@@ -1,6 +1,6 @@
 ---
 comment: false
-author: envizar
+authors: [ envizar ]
 editLink: false
 ---
 

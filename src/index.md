@@ -5,19 +5,12 @@ title: Главная
 hero:
   name: "MezaBook"
   text: "Сайт о сообществе мистики Minecraft"
-  tagline: "Свободная и независимая платформа для сообщества с безграничным потенциалом."
+  tagline: "Свободная и независимая платформа для сообщества мистических серверов с безграничным потенциалом."
   image: /logo/home.svg
-  prelink:
-    title: 🎉 Listbox component!
-    link: https://github.com/radix-vue/radix-vue/releases/tag/v1.7.0
-    target: _blank
   actions:
     - theme: alt
       text: 📖 О проекте
       link: /info/
-    - theme: alt
-      text: 𖤐 OminousVoid
-      link: /ov/
 
 # features:
 #   - title: <span class='emoji'>📥</span> Возможность редактирования

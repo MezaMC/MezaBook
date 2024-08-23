@@ -1,27 +1,15 @@
-<script setup>
-
-import {useData} from "vitepress";
-import {ref} from "vue";
+<script setup lang="ts">
+import { useData } from "vitepress";
+import AuthorEntry from "./AuthorEntry.vue";
 
 const { frontmatter } = useData()
-const imageUrl = ref(null);
-
-fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
-  .then(resp => resp.json())
-  .then(data => imageUrl.value = data['avatar_url'])
-  .catch(() => {});
-
 </script>
 
 
 <template>
-  <div class="container lt-xl:mt-4 xl:mb-4">
-    <span class="label mb-2">Автор статьи</span>
-    <div class="user">
-      <img :src="imageUrl" alt="avatar" class="avatar" v-if="imageUrl">
-      <a class="link" :href="`https://github.com/${frontmatter.author}`" v-if="imageUrl">{{frontmatter.author}}</a>
-      <span v-else>{{frontmatter.author}}</span>
-    </div>
+  <div class="container">
+    <span class="label mb-2">Автор{{ (frontmatter.authors.length == 1) ? '' : 'ы' }} статьи</span>
+    <AuthorEntry v-for="author in frontmatter.authors" :username="author" :key="author" />
   </div>
 </template>
 
@@ -33,33 +21,15 @@ fetch(`https://api.github.com/users/${frontmatter.value['author']}`)
   background-color: var(--vp-c-bg-elv);
 
   width: auto;
+  max-width: 250px;
   border-radius: 10px;
   padding: 4px 12px;
   display: flex;
   flex-direction: column;
 
   .label {
-    color: rgba(206, 215, 245, 0.25);
+    color: var(--vp-c-text-3);
     font-size: 12px;
-    //margin-bottom: 6px;
-  }
-
-  .user {
-    align-items: center;
-    display: flex;
-    margin-bottom: 6px;
-    overflow: auto;
-
-    .link {
-      text-decoration: underline;
-      font-size: 16px;
-    }
-
-    .avatar {
-      width: 30px;
-      border-radius: 30px;
-      margin-right: 8px;
-    }
   }
 }
 
