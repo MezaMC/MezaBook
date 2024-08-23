@@ -22,12 +22,13 @@
 
 // Стили только для страниц с pageClass: ov
 .ov  {
+    // Кастомный шрифт
+    font-family: 'Noto Sans Mono', monospace;
+    --vp-code-block-bg: transparent;
+
     .DocSearch-Button {
         background-color: transparent;
     }
-
-    // Кастомный шрифт
-    font-family: 'Noto Sans Mono', monospace;
 
     // Кастомный фон home страницы
     &:has(.VPHome) {
@@ -38,13 +39,13 @@
     // Кастомный сайдбар
     .VPSidebar {
         background-color: var(--vp-c-bg) !important;
+        border-right: 1px solid var(--vp-c-divider);
+
         .curtain {
             background-color: transparent !important;
         }
-        border-right: 1px solid var(--vp-c-divider);
     }
 
-    --vp-code-block-bg: transparent;
     .vp-doc {
         .vp-code {
             background-color: transparent;
