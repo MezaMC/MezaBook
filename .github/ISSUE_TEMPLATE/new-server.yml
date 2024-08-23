@@ -1,0 +1,57 @@
+name: Запрос на добавление сервера
+labels: Сервер
+body:
+  - type: input
+    id: server-ip
+    attributes:
+      label: Адрес сервера
+      description: IP адрес или домен, по которому можно зайти на сервер
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: Небольшое описание сервера
+      description: Кратко опишите ваш сервер
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Прочие пожелания
+      description: Оставьте тут пожелания по оформлению. Например, какой градиент нужно сделать для названия и какая должна быть обводка
+
+  - type: markdown
+    id: links
+    attributes:
+      value: "## Различные ссылки"
+
+  - type: input
+    id: discord-link
+    attributes:
+      label: Discord сервер
+      description: Оставьте ссылку на Discord сервер. Не присылать ссылки наподобие dsc.gg!
+      value: https://discord.gg/
+
+  - type: input
+    id: website-link
+    attributes:
+      label: Ссылка на сайт
+      description: Если у сервера есть сайт, оставьте ссылку на него здесь
+
+  - type: input
+    id: youtube-link
+    attributes:
+      label: YouTube канал
+      description: Если у сервера есть YouTube канал, оставьте ссылку на него здесь
+      value: https://youbube.com/
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Условия
+      options:
+        - label: "Сервер расположен на платном хостинге"
+          required: true
+        - label: "Сервер соответствует мистической тематике"
+          required: true
