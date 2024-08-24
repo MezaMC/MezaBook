@@ -19,7 +19,7 @@ function toClipboard(text: string){
   <div class="flex h-[64px] bg-bg-elv items-center lt-phone:(flex-col h-[128px] items-start gap-1)">
     <img :src="img !== undefined ? img : '/pack.png'" alt="server icon" width="64" height="64" />
     <div class="debug flex flex-col w-fit h-fit sm:m-l-4 m-l-2">
-      <span class="debug font-600 sm:text-2xl text-xl h-8 overflow-scroll text-nowrap flex items-center" v-html="name"></span>
+      <span class="debug font-600 sm:text-2xl text-xl h-8 text-nowrap flex items-center" v-html="name"></span>
       <div class="flex gap-1 items-center max-h-6">
         <span class="debug font-mono lt-sm:text-sm h-fit text-brand-main font-500">{{ ip }}</span>
         <button @click="toClipboard(ip)"
