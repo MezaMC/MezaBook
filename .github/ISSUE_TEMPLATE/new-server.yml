@@ -31,7 +31,7 @@ body:
     id: discord-link
     attributes:
       label: Discord сервер
-      description: Оставьте ссылку на Discord сервер. Не присылать ссылки наподобие dsc.gg!
+      description: Оставьте ссылку на Discord сервер
       value: https://discord.gg/
 
   - type: input

@@ -52,29 +52,32 @@ export default {
     },
         {
             text: 'Сервера',
-            items: [{
-                text: "Мониторинг",
-                link: '/community/servers/'
-            },
-                {
-                    text: "OminousVoid 🔗",
-                    link: '/ov/'
-                },
-                {
-                    text: "UnknownDead",
-                    link: '/community/servers/UnknownDead'
-                },
-                {
-                    text: "Мёртвые сервера",
-                    link: '/community/servers/dead',
-                    collapsed: true,
-                    items: [{
-                        text: 'SiimpAlone',
-                        link: '/community/servers/SiimpAlone'
-                    }]
-                }
-            ]
+            items: []
         },
+    ],
+
+    '/servers' : [
+        {
+            text: "Мониторинг",
+            link: '/servers/'
+        },
+        {
+            text: "OminousVoid 🔗",
+            link: '/ov/'
+        },
+        {
+            text: "UnknownDead",
+            link: '/servers/UnknownDead'
+        },
+        {
+            text: "Мёртвые сервера",
+            link: '/servers/dead',
+            collapsed: true,
+            items: [{
+                text: 'SiimpAlone',
+                link: '/servers/SiimpAlone'
+            }]
+        }
     ],
 
 

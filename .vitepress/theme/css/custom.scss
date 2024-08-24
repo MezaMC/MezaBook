@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+
+    --vp-font-family-mono: 'JetBrains Mono', monospace;
+}
+
+.VPHero .name {
+    --vp-font-family-base: 'Manrope', sans-serif;
+}
+
 .vp-doc {
     h1 {
         padding-bottom: 10px;
@@ -27,4 +39,21 @@
     border-radius: 5px;
     margin-right: 5px;
     background: var(--vp-c-default-soft);
+}
+
+
+.grad-warped {
+    background: linear-gradient(90deg, #3cff57, #00CDAC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grad-redux {
+    background: linear-gradient(90deg, #FFB000, #D9924F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grad-survivalhome {
+    background: linear-gradient(90deg, #FBA600, #FDFDFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

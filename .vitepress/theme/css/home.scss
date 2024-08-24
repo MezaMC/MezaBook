@@ -1,0 +1,21 @@
+.VPHome {
+  a.icon::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-right: 0.5em;
+  }
+
+  a.servers::before {
+    background-image: url("/icons/fire.svg");
+    transform: scale(.95, .95) translate(0, 25%);
+  }
+
+  //.VPButton {
+  //  border-radius: 10px !important;
+  //}
+}

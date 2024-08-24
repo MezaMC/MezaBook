@@ -14,7 +14,7 @@ import TechFeature from "./TechFeature.vue";
 				<span>Современная платформа для сообщества</span>
 			</span>
 		<span class="font-400 mt-3 max-w-[700px] line-height-[1.6]" un-text="vptext-2 [20px] center">
-			Встречайте MezaBook - первый полноценный аналог МКВ. Проект стремится объединить сообщество мистики Minecraft
+			MezaBook создан, чтобы объединить сообщество мистики Minecraft
 		</span>
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-8 mt-12">

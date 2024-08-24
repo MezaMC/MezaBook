@@ -8,7 +8,7 @@ import {useData} from "vitepress";
 
 <template>
 	<div class="flex items-center justify-center mb-2 text-vptext-2 hover:text-vptext-1 transition-colors">
-		<div class="w-[92%] bg-bg-elv rounded-2 hover:(outline-brand-ptg outline-2 outline-offset-6) outline outline-transparent transition-all z-0 flex items-center flex-col p-t-4 gap-2 overflow-hidden">
+		<div class="w-[92%] bg-bg-elv rounded-2 hover:(outline-brand-ptg outline-2 outline-offset-6) outline outline-transparent transition-all flex items-center flex-col p-t-4 gap-2 overflow-hidden">
 			<div class="flex gap-2">
 				<img src="/logo/p2g_logo.svg" class="w-8 h-8">
 				<span class="font-600 text-lg text-gray-2">Play2GO.cloud</span>

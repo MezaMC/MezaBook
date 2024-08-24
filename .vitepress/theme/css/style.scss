@@ -121,8 +121,3 @@
 :root {
     --vp-c-gutter: transparent;
 }
-
-// Уменьшает закругление у кнопок на домашних страницах
-.VPHome .VPButton {
-    border-radius: 10px !important;
-}

@@ -4,6 +4,10 @@ import transformerVariantGroup from '@unocss/transformer-variant-group'
 import presetAnimations from 'unocss-preset-animations'
 
 export default defineConfig({
+	rules: [
+		['font-mono', {'font-family': '"JetBrains Mono", monospace'}]
+	],
+
 	content: {
 		filesystem: [
 			'**/*.{html,js,ts,mjs,mts,vue,md}',
@@ -19,6 +23,7 @@ export default defineConfig({
 	],
 	theme: {
 		breakpoints: {
+			'phone': '400px',
 			'sm': '640px',
 			'md': '768px',
 			'lg': '1024px',
@@ -31,7 +36,8 @@ export default defineConfig({
 				'grim': 'var(--vp-c-brand-2)',
 				'dark': 'var(--vp-c-brand-3)',
 				'soft': 'var(--vp-c-brand-soft)',
-				'ptg': 'rgb(225, 29, 72)'
+				'ptg': 'rgb(225, 29, 72)',
+				'divider': 'var(--vp-c-divider)'
 			},
 			'bg': {
 				'main': 'var(--vp-c-bg)',
@@ -41,6 +47,7 @@ export default defineConfig({
 			},
 			'vptext': {
 				'1': 'var(--vp-c-text-1)',
+				'1.5': '#d6d0d6',
 				'2': 'var(--vp-c-text-2)',
 				'3': 'var(--vp-c-text-3)',
 			},
