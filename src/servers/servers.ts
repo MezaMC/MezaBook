@@ -41,7 +41,6 @@ export const servers: { [name: string]: Server } = {
     unknown_dead: {
         name: 'ʊռӄռօառ.⃣.⃣',
         ip: '212.80.7.230:20096',
-        icon: 'https://cdn.discordapp.com/icons/995385741804830760/a_8bbf5bd85601881f716ec80cbbb1718e.webp?size=128',
         desc: `<span style='color: #bf0000;'> - Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
         color: '#ca9292',
         links: {
