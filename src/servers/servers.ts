@@ -24,6 +24,17 @@ export const servers: { [name: string]: Server } = {
 
         discord: 'https://discord.gg/8BdbfEKNHE',
     },
+    warped_redux: {
+        name: `<span class="grad-warped">Warped</span><span class="grad-redux">Redux</span>`,
+        ip: 'WarpedRedux.online',
+        status: 'active',
+        icon: '/server-icons/warped_redux.png',
+        desc: `Возвращение легендарного мистического сервера<br>Новая история, новые возможности`,
+        alt_api: true,
+        color: `#00cdac`,
+
+        discord: 'https://discord.gg/Q69FqG47xw',
+    },
     unknown_dead: {
         name: 'ʊռӄռօառ.⃣.⃣',
         ip: '212.80.7.230:20096',
@@ -36,20 +47,9 @@ export const servers: { [name: string]: Server } = {
         page: `/servers/UnknownDead`,
         website: 'https://dev-ce2.github.io/devlogs/'
     },
-    warped_redux: {
-        name: `<span class="grad-warped">Warped</span><span class="grad-redux">Redux</span>`,
-        ip: 'WarpedRedux.online',
-        status: 'active',
-        icon: '/server-icons/warped_redux.png',
-        desc: `Возвращение легендарного мистического сервера<br>Новая история, новые возможности`,
-        alt_api: true,
-        color: `#00cdac`,
-
-        discord: 'https://discord.gg/Q69FqG47xw',
-    },
     survival_home: {
         name: `<span class="grad-survivalhome">SurvivalHome</span>`,
-        ip: '46.4.17.189:25047',
+        ip: 'survivalhome.0ping.ru',
         status: 'active',
         icon: 'https://cdn.discordapp.com/icons/1180571431046758490/e59a2262b1d3bb64840a363e80633c2b.webp?size=128',
         desc: `Уютный и приятный сервер!`,
@@ -58,15 +58,31 @@ export const servers: { [name: string]: Server } = {
 
         discord: 'https://discord.gg/hcKq2TPJhz',
     },
+    dishade: {
+        name: `<span class="color-[#C1A685]">Dishade</span>`,
+        ip: '138.201.142.120:25696',
+        status: "active",
+        desc: 'Интересный мистический сервер.',
 
+        discord: 'https://discord.gg/nWt9K3Ztts',
+        youtube: 'https://www.youtube.com/@Dishade_Server',
+    },
     new_alliance: {
         name: `NewAlliance`,
-        ip: '138.201.122.104:24093',
+        ip: '65.109.58.46:20133',
         status: 'active',
         desc: 'После продолжительной ██████, завод превратился в руины, остатки прошлого по сей день есть в этом мире.',
 
         discord: 'https://discord.gg/JNKCzGYQ3U',
     },
+    demonstrate: {
+        name: 'Demonstrate',
+        ip: '178.63.10.85:25572',
+        status: 'active',
+        desc: '',
+
+        discord: 'https://discord.gg/2S2qZYk4pg'
+    }
 
 }
 
