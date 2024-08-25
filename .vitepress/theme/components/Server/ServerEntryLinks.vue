@@ -42,6 +42,11 @@ if (props.links) {
       link: props.links.youtube,
       icon: 'tabler:brand-youtube',
       display: 'YouTube'
+    },
+    {
+      link: props.links.donate,
+      icon: 'tabler:coins',
+      display: 'Поддержать'
     }
   ].filter(item => item.link);
   data[data.length - 1].last = true;
@@ -51,7 +56,7 @@ if (props.links) {
 
 <template>
 
-  <div class="flex items-center gap-2.5" v-if="data">
+  <div class="flex items-center gap-2.5 lt-sm:(grid items-center gap-1.5 cols-2) overflow-clip" v-if="data">
 
     <template v-for="item of data">
 
@@ -65,7 +70,7 @@ if (props.links) {
         {{ item.display }}
       </a>
 
-      <div class="w-[1px] h-4 bg-brand-divider" v-if="item.last !== true" /> <!-- Разделитель -->
+      <div class="w-[1px] h-4 bg-brand-divider lt-sm:hidden" v-if="item.last !== true" /> <!-- Разделитель -->
 
     </template>
 

@@ -3,6 +3,7 @@ export interface ServerLinks {
     page?: string
     youtube?: string
     website?: string
+    donate?: string
 }
 
 export interface Server {
@@ -60,14 +61,13 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/hcKq2TPJhz'
         },
     },
-    dishade: {
-        name: `<span class="color-[#C1A685]">Dishade</span>`,
-        ip: '138.201.142.120:25696',
-        desc: 'Таинственный мистический сервер с захватывающим сюжетом',
+    dark_of_future: {
+        name: '<span class="grad-darkoffuture">DarkOfFuture</span>',
+        ip: '212.80.7.70:25049',
+        desc: 'Rewind? No, revive.',
         links: {
-            discord: 'https://discord.gg/nWt9K3Ztts',
-            youtube: 'https://www.youtube.com/@Dishade_Server',
-        },
+            discord: 'https://discord.gg/BSymqZQ7Ds'
+        }
     },
     new_alliance: {
         name: `NewAlliance`,
@@ -77,6 +77,15 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/JNKCzGYQ3U'
         },
     },
+    dishade: {
+        name: `<span class="color-[#C1A685]">Dishade</span>`,
+        ip: '138.201.142.120:25696',
+        desc: 'Таинственный мистический сервер с захватывающим сюжетом',
+        links: {
+            discord: 'https://discord.gg/nWt9K3Ztts',
+            youtube: 'https://www.youtube.com/@Dishade_Server',
+        },
+    },
     demonstrate: {
         name: 'Demonstrate',
         ip: '178.63.10.85:25572',
@@ -84,6 +93,14 @@ export const servers: { [name: string]: Server } = {
         links: {
             discord: 'https://discord.gg/mJc8DhwaQF'
         },
+    },
+    mythic_casual: {
+        name: 'MythicCasual',
+        ip: '212.80.7.68:24093',
+        icon: 'https://cdn.discordapp.com/icons/1200803681059225723/7a661c13a82936bc397f2f77e357df8a.webp?size=128',
+        links: {
+            discord: 'https://discord.gg/V5EXBvH9Vr'
+        }
     },
     hauntedcraft: {
         name: 'HauntedCraft',
