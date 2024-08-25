@@ -27,9 +27,9 @@ const serverIconImg = computed(() => {
   } else if (serverInfo.value?.icon) {
     return serverInfo.value.icon;
   } else {
-    return undefined;
+    return '/pack.png';
   }
-})
+});
 
 const serverOnlineData = computed(() => {
   if (serverInfo?.value?.online === true) {
@@ -39,20 +39,23 @@ const serverOnlineData = computed(() => {
       version: serverInfo?.value?.protocol?.name
     }
   }
-})
+});
 
 </script>
 
 <template>
   <div class="rounded-2 overflow-hidden border-(1px solid white op-15) hover:border-op-30 transition">
-    <ServerEntryTop :ip="server.ip" :name="server.name" :img="serverIconImg" />
-    <hr class="important:(p-0 m-0)">
-    <div class="w-full flex p-l-4 p-r-4 p-3 flex-col gap-1.5">
 
-      <span v-html="server.desc" v-if="server.desc" class="text-vptext-1.5" />
-      <ServerEntryOnline :data="serverOnlineData" />
-      <ServerEntryLinks :discord="server.discord" :website="server.website"
-                        :youtube="server.youtube" :page="server.page" />
+    <ServerEntryTop :ip="server.ip" :name="server.name" :img="serverIconImg" /> <!-- Верхний блок (иконка, название и ip) -->
+
+    <hr class="important:(p-0 m-0)"> <!-- Разделитель -->
+
+    <div class="w-full flex p-l-4 p-r-4 p-3 flex-col gap-1.5"> <!-- Нижний блок -->
+
+      <span v-html="server.desc" v-if="server.desc" class="text-vptext-1.5" /> <!-- Описание -->
+      <ServerEntryOnline :data="serverOnlineData" /> <!-- Онлайн и версия -->
+      <ServerEntryLinks :links="server.links" /> <!-- Ссылки -->
+
     </div>
   </div>
 </template>
