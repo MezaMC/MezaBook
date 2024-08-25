@@ -61,14 +61,6 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/hcKq2TPJhz'
         },
     },
-    dark_of_future: {
-        name: '<span class="grad-darkoffuture">DarkOfFuture</span>',
-        ip: '212.80.7.70:25049',
-        desc: 'Rewind? No, revive.',
-        links: {
-            discord: 'https://discord.gg/BSymqZQ7Ds'
-        }
-    },
     new_alliance: {
         name: `NewAlliance`,
         ip: '65.109.58.46:20133',
