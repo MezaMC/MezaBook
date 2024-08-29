@@ -65,7 +65,8 @@ export const servers: { [name: string]: Server } = {
         ip: '65.109.58.46:20133',
         desc: 'После продолжительной ██████, завод превратился в руины, остатки прошлого по сей день есть в этом мире.',
         links: {
-            discord: 'https://discord.gg/JNKCzGYQ3U'
+            discord: 'https://discord.gg/JNKCzGYQ3U',
+            website: 'https://new-alliancemc.github.io/newalliance/'
         },
     },
     dishade: {
