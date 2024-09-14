@@ -41,7 +41,7 @@ export const servers: { [name: string]: Server } = {
     unknown_dead: {
         name: 'ʊռӄռօառ.⃣.⃣',
         ip: '212.80.7.230:20096',
-        desc: `<span style='color: #bf0000;'> - Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
+        desc: `<span style='color: #bf0000;'>Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
         color: '#ca9292',
         links: {
             discord: 'https://discord.gg/qEupJs53Tc',
