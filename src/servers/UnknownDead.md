@@ -1,17 +1,18 @@
 ---
-title: UnknownDead
+title: ʊռӄռօառ.⃣.⃣
 tags: [server]
 ---
 
 # {{ $frontmatter.title }}
-Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ
-ԃҽɱσɳιƈ ʂҽɾʋҽɾ.
 
-## • Information •
-```
-+ IP: 212.80.7.230:20096
-+ Version: 1.20.1
-+ Licens: Inte nödvändig.
-```
+_`Uɳԃʋιƙ ԃҽ ԃყʂƚɾα . .`_
 
-[Discord server](https://discord.gg/qEupJs53Tc)
+`Developer noticed the strange activity with armor stands, and he heard the terrifying roar of some creature.`
+
+`As a group of developers, we are currently trying to figure out what it is.`
+
+`.
+.
+.`
+![Screenshot](https://github.com/user-attachments/assets/f7307826-5f61-41b3-adbf-862885b004dc)
+

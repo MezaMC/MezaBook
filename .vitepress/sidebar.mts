@@ -66,7 +66,7 @@ export default {
             link: '/ov/'
         },
         {
-            text: "UnknownDead",
+            text: "ʊռӄռօառ.⃣.⃣",
             link: '/servers/UnknownDead'
         },
         {
