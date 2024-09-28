@@ -21,6 +21,18 @@ export default defineConfig({
 	plugins: [
 		UnoCSS(),
 	  ],
+    // css: {
+    //   scss: {
+    //     api: 'modern-compiler', // or "modern"
+    //   }
+    // }
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler'
+        }
+      }
+    }
   },
 
   appearance: 'force-dark',

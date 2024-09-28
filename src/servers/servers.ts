@@ -41,6 +41,7 @@ export const servers: { [name: string]: Server } = {
     unknown_dead: {
         name: 'ʊռӄռօառ.⃣.⃣',
         ip: '212.80.7.230:20096',
+        alt_api: true,
         desc: `<span style='color: #bf0000;'>Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
         color: '#ca9292',
         links: {
@@ -63,7 +64,7 @@ export const servers: { [name: string]: Server } = {
     new_alliance: {
         name: `NewAlliance`,
         ip: '65.109.58.46:20133',
-        desc: 'После продолжительной ██████, завод превратился в руины, остатки прошлого по сей день есть в этом мире.',
+        desc: '<span style=\'color: #bf0000;\'>they are watching</span>',
         links: {
             discord: 'https://discord.gg/JNKCzGYQ3U',
             website: 'https://new-alliancemc.github.io/newalliance/'
