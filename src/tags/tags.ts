@@ -1,3 +1,4 @@
+import Tag from "./Tag.vue";
 
 interface Tag {
     icon?: string,
@@ -7,13 +8,13 @@ interface Tag {
     display?: string
 }
 
-export default {
-    server: <Tag>{
+const tags_data: { [name: string]: Tag } = {
+    server: {
         icon: 'tabler:server',
         display: 'Сервер',
         desc: 'Тег для статей о мистических серверах'
     },
-    ov: <Tag>{
+    ov: {
         icon: 'tabler:grave-2',
         display: 'OminousVoid',
         color: '#c8bafd',
@@ -21,3 +22,5 @@ export default {
         desc: 'Тег для статей, отсонящихся к <a href="/ov/">OminousVoid</a>'
     }
 }
+
+export default tags_data

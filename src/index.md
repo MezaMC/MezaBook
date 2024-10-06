@@ -40,7 +40,7 @@ hero:
 ---
 
 <script setup>
-    import HomeContent from "/components/HomeContent.vue";
+    import HomeContent from "../.vitepress/theme/components/HomePage/HomeContent.vue";
 </script>
 
 <HomeContent />

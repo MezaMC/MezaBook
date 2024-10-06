@@ -10,12 +10,14 @@ import './css/home.scss'
 import 'virtual:uno.css'
 import Layout from "./Layout.vue";
 import {Icon} from "@iconify/vue";
+import WIP from "./components/WIP.vue";
 
 export default {
   extends: DefaultTheme,
   Layout: Layout,
   enhanceApp({ app, router, siteData }) {
       app.component('Icon', Icon);
+      app.component('WIP', WIP);
   },
   setup() {
     // Get frontmatter and route
