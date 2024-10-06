@@ -46,7 +46,7 @@ export const servers: { [name: string]: Server } = {
         color: '#ca9292',
         links: {
             discord: 'https://discord.gg/qEupJs53Tc',
-            page: `/servers/UnknownDead`,
+            page: `/servers/pages/UnknownDead`,
             website: 'https://dev-ce2.github.io/devlogs/'
         },
     },
