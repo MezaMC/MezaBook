@@ -18,13 +18,13 @@ export interface Server {
 }
 
 export const servers: { [name: string]: Server } = {
-    wadner_server: {
-        name: 'Wadner server',
-        ip: '212.80.7.202:20444',
-        icon: 'https://cdn.discordapp.com/icons/1035994086487892059/2b1e9353c623aa2fd2b5759b2cdd5f3e.webp?size=128',
-        color: '#8caaa5',
+    demonstrate: {
+        name: 'Demonstrate',
+        ip: '178.63.10.85:25572',
+        desc: 'Вы чувствуете? Они наблюдают за тобой!',
         links: {
-            discord: 'https://discord.gg/8BdbfEKNHE'
+            discord: 'https://discord.gg/mJc8DhwaQF',
+            donate: 'https://www.donationalerts.com/r/demonstrate_1'
         },
     },
     warped_redux: {
@@ -79,14 +79,6 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@Dishade_Server',
         },
     },
-    demonstrate: {
-        name: 'Demonstrate',
-        ip: '178.63.10.85:25572',
-        desc: 'Вы чувствуете? Они наблюдают за тобой!',
-        links: {
-            discord: 'https://discord.gg/mJc8DhwaQF'
-        },
-    },
     mythic_casual: {
         name: 'MythicCasual',
         ip: '212.80.7.68:24093',
@@ -95,14 +87,16 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/V5EXBvH9Vr'
         }
     },
-    hauntedcraft: {
-        name: 'HauntedCraft',
-        ip: '212.80.7.210:20061',
-        desc: 'Наша история только начинается',
+    wadner_server: {
+        name: 'Wadner server',
+        ip: '212.80.7.202:20444',
+        desc: 'Сервер не включался долгое время',
+        icon: 'https://cdn.discordapp.com/icons/1035994086487892059/2b1e9353c623aa2fd2b5759b2cdd5f3e.webp?size=128',
+        color: '#8caaa5',
         links: {
-            discord: 'https://discord.gg/kRnSZ57e4u'
-        }
-    }
+            discord: 'https://discord.gg/8BdbfEKNHE'
+        },
+    },
 
 }
 
