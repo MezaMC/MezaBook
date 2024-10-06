@@ -71,7 +71,8 @@ export default {
             text: "Архив серверов",
             link: '/servers/archive/',
             items: [
-                { text: 'SiimpAlone', link: '/servers/archive/SiimpAlone'}
+                { text: 'SiimpAlone', link: '/servers/archive/SiimpAlone'},
+                { text: 'OminousVoid', link: '/servers/archive/OminousVoid'}
             ]
         }
     ],
