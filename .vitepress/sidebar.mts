@@ -62,21 +62,17 @@ export default {
             link: '/servers/'
         },
         {
-            text: "OminousVoid 🔗",
-            link: '/ov/'
+            text: "Страницы серверов",
+            items: [
+                { text: "ʊռӄռօառ.⃣.⃣", link: '/servers/pages/UnknownDead' },
+            ]
         },
         {
-            text: "ʊռӄռօառ.⃣.⃣",
-            link: '/servers/UnknownDead'
-        },
-        {
-            text: "Мёртвые сервера",
-            link: '/servers/dead',
-            collapsed: true,
-            items: [{
-                text: 'SiimpAlone',
-                link: '/servers/SiimpAlone'
-            }]
+            text: "Архив серверов",
+            link: '/servers/archive/',
+            items: [
+                { text: 'SiimpAlone', link: '/servers/archive/SiimpAlone'}
+            ]
         }
     ],
 

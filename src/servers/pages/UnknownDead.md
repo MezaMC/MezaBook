@@ -5,7 +5,7 @@ tags: [server]
 
 <script setup>
 
-    import ServerEntry from "../../.vitepress/theme/components/Server/ServerEntry.vue"; 
+    import ServerEntry from "../../../.vitepress/theme/components/Server/ServerEntry.vue"; 
 
 </script>
 
