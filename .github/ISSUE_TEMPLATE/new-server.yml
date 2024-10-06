@@ -32,7 +32,7 @@ body:
     attributes:
       label: Discord сервер
       description: Оставьте ссылку на Discord сервер
-      value: https://discord.gg/
+      placeholder: https://discord.gg/
 
   - type: input
     id: website-link
@@ -45,7 +45,7 @@ body:
     attributes:
       label: YouTube канал
       description: Если у сервера есть YouTube канал, оставьте ссылку на него здесь
-      value: https://youbube.com/
+      placeholder: https://youtube.com/
 
   - type: checkboxes
     id: checks
