@@ -9,7 +9,7 @@ tags: [server]
 
 </script>
 
-<ServerEntry server="unknown_dead"></ServerEntry>
+<ServerEntry server="unknown_dead" :onpage="true"></ServerEntry>
 <br>
 
 # {{ $frontmatter.title }}

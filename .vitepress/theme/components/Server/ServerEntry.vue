@@ -8,6 +8,7 @@ import {computed, ref} from "vue";
 
 const props = defineProps<{
   server: string
+  onpage?: Boolean
 }>()
 const server: Server = servers[props.server]
 
@@ -54,7 +55,7 @@ const serverOnlineData = computed(() => {
 
       <span v-html="server.desc" v-if="server.desc" class="text-vptext-1.5" /> <!-- Описание -->
       <ServerEntryOnline :data="serverOnlineData" /> <!-- Онлайн и версия -->
-      <ServerEntryLinks :links="server.links" /> <!-- Ссылки -->
+      <ServerEntryLinks :links="server.links" :onpage="onpage" /> <!-- Ссылки -->
 
     </div>
   </div>

@@ -4,6 +4,7 @@ export interface ServerLinks {
     youtube?: string
     website?: string
     donate?: string
+    telegram?: string
 }
 
 export interface Server {
@@ -20,11 +21,12 @@ export interface Server {
 export const servers: { [name: string]: Server } = {
     demonstrate: {
         name: 'Demonstrate',
-        ip: '178.63.10.85:25572',
+        ip: '212.80.7.207:20077',
         desc: 'Вы чувствуете? Они наблюдают за тобой!',
         links: {
             discord: 'https://discord.gg/mJc8DhwaQF',
-            donate: 'https://www.donationalerts.com/r/demonstrate_1'
+            donate: 'https://www.donationalerts.com/r/demonstrate_1',
+            telegram: 'https://t.me/+0tYnsyFrrMc0Njhi'
         },
     },
     warped_redux: {
@@ -72,7 +74,7 @@ export const servers: { [name: string]: Server } = {
     },
     dishade: {
         name: `<span class="color-[#C1A685]">Dishade</span>`,
-        ip: '138.201.142.120:25696',
+        ip: '212.80.7.66:26231',
         desc: 'Таинственный мистический сервер с захватывающим сюжетом',
         links: {
             discord: 'https://discord.gg/nWt9K3Ztts',
