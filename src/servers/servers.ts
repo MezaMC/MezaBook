@@ -21,7 +21,7 @@ export interface Server {
 export const servers: { [name: string]: Server } = {
     demonstrate: {
         name: 'Demonstrate',
-        ip: '212.80.7.207:20077',
+        ip: 'mc.demonstrate.space',
         desc: 'Вы чувствуете? Они наблюдают за тобой!',
         links: {
             discord: 'https://discord.gg/mJc8DhwaQF',
@@ -54,7 +54,7 @@ export const servers: { [name: string]: Server } = {
     },
     survival_home: {
         name: `<span class="grad-survivalhome">SurvivalHome</span>`,
-        ip: 'survivalhome.0ping.ru',
+        ip: '212.80.7.212:20070',
         icon: 'https://cdn.discordapp.com/icons/1180571431046758490/e59a2262b1d3bb64840a363e80633c2b.webp?size=128',
         desc: `Уютный и приятный сервер!`,
 		alt_api: true,
