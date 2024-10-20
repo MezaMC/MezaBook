@@ -32,7 +32,14 @@ body:
     attributes:
       label: Discord сервер
       description: Оставьте ссылку на Discord сервер
-      placeholder: https://discord.gg/
+      placeholder: https://discord.gg/<ссылка>
+
+  - type: input
+    id: telegram-link
+    attributes:
+      label: Telegram канал
+      description: Оставьте ссылку на Telegram канал
+      placeholder: https://t.me/<ссылка>
 
   - type: input
     id: website-link
