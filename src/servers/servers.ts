@@ -72,14 +72,12 @@ export const servers: { [name: string]: Server } = {
             website: 'https://new-alliancemc.github.io/newalliance/'
         },
     },
-    dishade: {
-        name: `<span class="color-[#C1A685]">Dishade</span>`,
-        ip: '212.80.7.66:26231',
-        desc: 'Таинственный мистический сервер с захватывающим сюжетом',
+    crimsonium: {
+        name: 'Crimsonium',
+        ip: '212.80.7.203:20052',
         links: {
-            discord: 'https://discord.gg/nWt9K3Ztts',
-            youtube: 'https://www.youtube.com/@Dishade_Server',
-        },
+            discord: 'https://discord.gg/P4nZnX2pG7'
+        }
     },
     mythic_casual: {
         name: 'MythicCasual',
@@ -88,6 +86,15 @@ export const servers: { [name: string]: Server } = {
         links: {
             discord: 'https://discord.gg/V5EXBvH9Vr'
         }
+    },
+    dishade: {
+        name: `<span class="color-[#C1A685]">Dishade</span>`,
+        ip: '212.80.7.66:26231',
+        desc: 'Таинственный мистический сервер с захватывающим сюжетом',
+        links: {
+            discord: 'https://discord.gg/nWt9K3Ztts',
+            youtube: 'https://www.youtube.com/@Dishade_Server',
+        },
     },
     wadner_server: {
         name: 'Wadner server',
