@@ -73,7 +73,7 @@ export const servers: { [name: string]: Server } = {
         },
     },
     crimsonium: {
-        name: 'Crimsonium',
+        name: '<span class="grad-crimsonium">Crimsonium</span>',
         desc: 'Мистический сервер со своими интересными мифами и сюжетом. Погрузитесь в мир мистики!',
         ip: '212.80.7.203:20052',
         links: {
