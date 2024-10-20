@@ -9,6 +9,7 @@
 практически всеми проектами данной тематики, существовавшими с 2021 по 2024 год.
 
 ## Ссылки
+- [Ассеты - скины, логотипы и локации](https://github.com/MezaMC/SiimpAssets)
 - [Discord сервер SiimpArchive](https://discord.gg/ebrNDn88fp)
 - [Статья на МКВ](https://minecraftcreepypasta.fandom.com/ru/wiki/SiimpAlone)
 ::: details Видеоматериал
