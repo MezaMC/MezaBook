@@ -74,6 +74,7 @@ export const servers: { [name: string]: Server } = {
     },
     crimsonium: {
         name: 'Crimsonium',
+        desc: 'Мистический сервер со своими интересными мифами и сюжетом. Погрузитесь в мир мистики!',
         ip: '212.80.7.203:20052',
         links: {
             discord: 'https://discord.gg/P4nZnX2pG7'
