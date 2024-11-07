@@ -97,16 +97,6 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@Dishade_Server',
         },
     },
-    wadner_server: {
-        name: 'Wadner server',
-        ip: '212.80.7.202:20444',
-        desc: 'Сервер не включался долгое время',
-        icon: 'https://cdn.discordapp.com/icons/1035994086487892059/2b1e9353c623aa2fd2b5759b2cdd5f3e.webp?size=128',
-        color: '#8caaa5',
-        links: {
-            discord: 'https://discord.gg/8BdbfEKNHE'
-        },
-    },
 
 }
 
