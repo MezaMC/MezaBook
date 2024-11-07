@@ -90,7 +90,7 @@ export const servers: { [name: string]: Server } = {
     },
     dishade: {
         name: `<span class="color-[#C1A685]">Dishade</span>`,
-        ip: '212.80.7.66:26231',
+        ip: '5.83.140.211:25721',
         desc: 'Таинственный мистический сервер с захватывающим сюжетом',
         links: {
             discord: 'https://discord.gg/nWt9K3Ztts',
