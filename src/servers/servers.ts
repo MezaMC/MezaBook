@@ -60,7 +60,10 @@ export const servers: { [name: string]: Server } = {
 		alt_api: true,
         color: '#e1c682',
         links: {
-            discord: 'https://discord.gg/hcKq2TPJhz'
+            discord: 'https://discord.gg/hcKq2TPJhz',
+            donate: 'https://boosty.to/survivalhome',
+            telegram: 'https://t.me/survivalhome',
+            youtube: 'https://www.youtube.com/@SurvivalHomeserver'
         },
     },
     new_alliance: {
