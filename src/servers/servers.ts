@@ -22,7 +22,6 @@ export const servers: { [name: string]: Server } = {
     demonstrate: {
         name: 'Demonstrate',
         ip: 'mc.demonstrate.space',
-        desc: 'Вы чувствуете? Они наблюдают за тобой!',
         links: {
             discord: 'https://discord.gg/mJc8DhwaQF',
             donate: 'https://www.donationalerts.com/r/demonstrate_1',
@@ -66,9 +65,9 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@SurvivalHomeserver'
         },
     },
-    new_alliance: {
-        name: `NewAlliance`,
-        ip: '65.109.58.46:20133',
+    echo_void: {
+        name: `EchoVoid`,
+        ip: '65.109.58.46:20931',
         desc: '<span style=\'color: #bf0000;\'>they are watching</span>',
         links: {
             discord: 'https://discord.gg/JNKCzGYQ3U',
@@ -100,6 +99,15 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@Dishade_Server',
         },
     },
+    haunted_craft: {
+        name: "<span class='color-gray-5'>Туман поглощает последние лучи света</span>",
+        ip: '212.80.7.212:20006',
+        links: {
+            discord: 'https://discord.gg/kRnSZ57e4u',
+            telegram: 'https://t.me/hauntedcraft',
+            youtube: 'https://www.youtube.com/@HauntedCraftYT'
+        }
+    }
 
 }
 
