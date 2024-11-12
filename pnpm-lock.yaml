@@ -33,9 +33,6 @@ importers:
       '@unocss/preset-attributify':
         specifier: ^0.59.4
         version: 0.59.4
-      '@unocss/transformer-variant-group':
-        specifier: ^0.59.4
-        version: 0.59.4
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)

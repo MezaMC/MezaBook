@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import ServerEntryTop from "./ServerEntryTop.vue";
-import ServerEntryOnline from "./ServerEntryOnline.vue";
+import ServerEntryOnline from "./ServerEntryStatus.vue";
 import ServerEntryLinks from "./ServerEntryLinks.vue";
 import {Server, servers} from "../../../../src/servers/servers";
 import {computed, ref} from "vue";
@@ -35,9 +35,15 @@ const serverIconImg = computed(() => {
 const serverOnlineData = computed(() => {
   if (serverInfo?.value?.online === true) {
     return {
-      online: serverInfo?.value?.players?.online,
-      max_online: serverInfo?.value?.players?.max,
-      version: serverInfo?.value?.protocol?.name
+      online: true,
+      player_count: serverInfo?.value?.players?.online,
+      player_count_max: serverInfo?.value?.players?.max,
+      version: serverInfo?.value?.protocol?.name,
+    }
+  } else {
+    return {
+      online: false,
+      inactive: server.inactive
     }
   }
 });

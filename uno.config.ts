@@ -1,6 +1,12 @@
 // uno.config.ts
-import { defineConfig, presetUno, presetAttributify } from 'unocss'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
+import {
+	defineConfig,
+	presetUno,
+	presetAttributify,
+	transformerDirectives,
+	transformerVariantGroup
+} from 'unocss'
+
 import presetAnimations from 'unocss-preset-animations'
 
 export default defineConfig({
@@ -19,7 +25,8 @@ export default defineConfig({
 		presetAnimations()
 	],
 	transformers: [
-		transformerVariantGroup()
+		transformerVariantGroup(),
+		transformerDirectives()
 	],
 	theme: {
 		breakpoints: {

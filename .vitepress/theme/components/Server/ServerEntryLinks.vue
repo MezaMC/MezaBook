@@ -64,9 +64,7 @@ if (props.links) {
 </script>
 
 <template>
-<!--lt-sm:(grid items-center gap-1.5 cols-2)-->
   <div class="flex items-center flex-wrap gap-[0.2rem_1.5rem]" v-if="data">
-
     <template v-for="item of data">
 
       <a @click="router.go(item.link);" v-if="item.internal_page === true">
@@ -79,19 +77,17 @@ if (props.links) {
         {{ item.display }}
       </a>
 
-<!--      <div class="w-[1px] h-4 bg-brand-divider" v-if="item.last !== true" /> &lt;!&ndash; Разделитель &ndash;&gt;-->
-
     </template>
-
   </div>
-
 </template>
 
 <style scoped lang="scss">
+
 a {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.24rem;
 }
+
 </style>

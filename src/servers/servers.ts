@@ -16,6 +16,7 @@ export interface Server {
     links?: ServerLinks
 	color?: string
 	alt_api?: boolean
+    inactive?: boolean
 }
 
 export const servers: { [name: string]: Server } = {
@@ -26,29 +27,6 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/mJc8DhwaQF',
             donate: 'https://www.donationalerts.com/r/demonstrate_1',
             telegram: 'https://t.me/+0tYnsyFrrMc0Njhi'
-        },
-    },
-    warped_redux: {
-        name: `<span class="grad-warped">Warped</span><span class="grad-redux">Redux</span>`,
-        ip: 'WarpedRedux.online',
-        icon: '/server-icons/warped_redux.png',
-        desc: `Возвращение легендарного мистического сервера<br>Новая история, новые возможности`,
-        alt_api: true,
-        color: `#00cdac`,
-        links: {
-            discord: 'https://discord.gg/Q69FqG47xw'
-        },
-    },
-    unknown_dead: {
-        name: 'ʊռӄռօառ.⃣.⃣',
-        ip: '212.80.7.230:20096',
-        alt_api: true,
-        desc: `<span style='color: #bf0000;'>Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
-        color: '#ca9292',
-        links: {
-            discord: 'https://discord.gg/qEupJs53Tc',
-            page: `/servers/pages/UnknownDead`,
-            website: 'https://dev-ce2.github.io/devlogs/'
         },
     },
     survival_home: {
@@ -65,13 +43,26 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@SurvivalHomeserver'
         },
     },
-    echo_void: {
-        name: `EchoVoid`,
-        ip: '65.109.58.46:20931',
-        desc: '<span style=\'color: #bf0000;\'>they are watching</span>',
+    haunted_craft: {
+        name: "<span class='grad-haunted'>ɧąųŋɬɛɖ</span>",
+        desc: "<span class='color-gray-5'>Туман поглощает последние лучи света</span>",
+        ip: '212.80.7.212:20006',
         links: {
-            discord: 'https://discord.gg/JNKCzGYQ3U',
-            website: 'https://new-alliancemc.github.io/newalliance/'
+            discord: 'https://discord.gg/kRnSZ57e4u',
+            telegram: 'https://t.me/hauntedcraft',
+            youtube: 'https://www.youtube.com/@HauntedCraftYT'
+        }
+    },
+    unknown_dead: {
+        name: 'ʊռӄռօառ.⃣.⃣',
+        ip: '212.80.7.230:20096',
+        alt_api: true,
+        desc: `<span style='color: #bf0000;'>Tԋҽ ɱσʂƚ ƚҽɾɾιႦʅҽ αɳԃ ԃҽɱσɳιƈ ʂҽɾʋҽɾ</span>`,
+        color: '#ca9292',
+        links: {
+            discord: 'https://discord.gg/qEupJs53Tc',
+            page: `/servers/pages/UnknownDead`,
+            website: 'https://dev-ce2.github.io/devlogs/'
         },
     },
     crimsonium: {
@@ -99,15 +90,26 @@ export const servers: { [name: string]: Server } = {
             youtube: 'https://www.youtube.com/@Dishade_Server',
         },
     },
-    haunted_craft: {
-        name: "<span class='grad-haunted'>ɧąųŋɬɛɖ</span>",
-        desc: "<span class='color-gray-5'>Туман поглощает последние лучи света</span>",
-        ip: '212.80.7.212:20006',
+    echo_void: {
+        name: `EchoVoid`,
+        ip: '65.109.58.46:20931',
+        desc: '<span style=\'color: #bf0000;\'>they are watching</span>',
         links: {
-            discord: 'https://discord.gg/kRnSZ57e4u',
-            telegram: 'https://t.me/hauntedcraft',
-            youtube: 'https://www.youtube.com/@HauntedCraftYT'
-        }
+            discord: 'https://discord.gg/JNKCzGYQ3U',
+            website: 'https://new-alliancemc.github.io/newalliance/'
+        },
+    },
+    warped_redux: {
+        inactive: true,
+        name: `<span class="grad-warped">Warped</span><span class="grad-redux">Redux</span>`,
+        ip: 'WarpedRedux.online',
+        icon: '/server-icons/warped_redux.png',
+        desc: `Возвращение легендарного мистического сервера<br>Новая история, новые возможности`,
+        alt_api: true,
+        color: `#00cdac`,
+        links: {
+            discord: 'https://discord.gg/Q69FqG47xw'
+        },
     }
 
 }

@@ -11,14 +11,6 @@ const servers: Array<string> = Object.keys(servers_json);
     <ServerEntry :server="server_name" v-for="server_name of servers" />
     <ServerAdd />
   </div>
-
-<!--  <ServerAdd />-->
-<!--  <div class="flex flex-col gap-8.5">-->
-<!--    <ServerEntry server="warped_redux" />-->
-<!--    <NewServerEntry />-->
-<!--    <NewServerEntry />-->
-<!--  </div>-->
-
 </template>
 
 <style scoped lang="sass">
