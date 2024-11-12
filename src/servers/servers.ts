@@ -100,7 +100,8 @@ export const servers: { [name: string]: Server } = {
         },
     },
     haunted_craft: {
-        name: "<span class='color-gray-5'>Туман поглощает последние лучи света</span>",
+        name: "<span class='grad-haunted'>ɧąųŋɬɛɖ</span>",
+        desc: "<span class='color-gray-5'>Туман поглощает последние лучи света</span>",
         ip: '212.80.7.212:20006',
         links: {
             discord: 'https://discord.gg/kRnSZ57e4u',
