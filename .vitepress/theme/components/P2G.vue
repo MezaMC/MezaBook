@@ -14,7 +14,7 @@ import {useData} from "vitepress";
 				<span class="font-600 text-lg text-gray-2">Play2GO.cloud</span>
 			</div>
 			<div class="m-l-3 m-r-3">
-				Мощный Minecraft/VPS хостинг с низкими ценами и отличной защитой от DDoS.
+				Мощный VDS/игровой хостинг с низкими ценами и отличной защитой от DDoS.
 			</div>
 			<a href="https://p2g.meza.one" target="_blank" class="text-gray-2 active:text-brand-ptg/white h-12 flex w-full mt-2 border-2 border-t-solid border-gray-5/40 transition-colors 
 			hover:(border-brand-ptg bg-brand-ptg/12)
