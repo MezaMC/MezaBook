@@ -75,7 +75,7 @@ export const servers: { [name: string]: Server } = {
     },
     mythic_casual: {
         name: 'MythicCasual',
-        ip: '212.80.7.68:24093',
+        ip: '212.80.7.67:26989',
         icon: 'https://cdn.discordapp.com/icons/1200803681059225723/7a661c13a82936bc397f2f77e357df8a.webp?size=128',
         links: {
             discord: 'https://discord.gg/V5EXBvH9Vr'
@@ -98,6 +98,14 @@ export const servers: { [name: string]: Server } = {
             discord: 'https://discord.gg/JNKCzGYQ3U',
             website: 'https://new-alliancemc.github.io/newalliance/'
         },
+    },
+    cursed_forest: {
+        name: `ᴄᴜʀꜱᴇᴅꜰᴏʀᴇꜱᴛ`,
+        ip: '185.219.84.38:25515',
+        desc: 'Игроки противостоят злобной сущности по имени Wandery',
+        links: {
+            discord: 'https://discord.gg/tQHNxT22'
+        }
     },
     warped_redux: {
         inactive: true,
