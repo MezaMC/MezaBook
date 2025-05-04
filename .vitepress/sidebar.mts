@@ -1,83 +1,5 @@
 export default {
 
-    '/ov': [{
-        text: 'Основное',
-        items: [{
-            text: 'Информация',
-            link: '/ov/about'
-        },
-            {
-                text: 'Правила',
-                link: '/ov/rules'
-            },
-            {
-                text: 'Обновления',
-                link: '/ov/updates'
-            }
-        ]
-    },
-        {
-            text: 'Статьи',
-            items: [{
-                text: 'Паранормальщина',
-                link: '/ov/pages/paranormal'
-            },
-                {
-                    text: 'Особенности чата',
-                    link: '/ov/pages/chat'
-                },
-                {
-                    text: 'Статус души',
-                    link: '/ov/pages/soul'
-                },
-                {
-                    text: 'Мир пустоты',
-                    link: '/ov/pages/void'
-                },
-                {
-                    text: 'Кланы',
-                    link: '/ov/pages/clans'
-                }
-            ]
-        }
-    ],
-
-
-    '/community': [{
-        text: 'Информация',
-        items: [{
-            text: "О сообществе",
-            link: '/community/'
-        }]
-    },
-        {
-            text: 'Сервера',
-            items: []
-        },
-    ],
-
-    '/servers' : [
-        {
-            text: "Мониторинг",
-            link: '/servers/'
-        },
-        {
-            text: "Страницы серверов",
-            items: [
-                { text: "ʊռӄռօառ.⃣.⃣", link: '/servers/pages/UnknownDead' },
-            ]
-        },
-        {
-            text: "Архив серверов",
-            link: '/servers/archive/',
-            items: [
-                { text: 'SiimpAlone', link: '/servers/archive/SiimpAlone'},
-                { text: 'OminousVoid', link: '/servers/archive/OminousVoid'}
-            ]
-        }
-    ],
-
-
     '/info': [{
         text: 'Информация',
         items: [{
@@ -101,5 +23,25 @@ export default {
                 link: '/info/tags'
             }
         ]
+    }],
+
+    '/p': [{
+        text: 'Для игроков',
+        link: '/p/',
+        items: [
+            {
+                text: 'Сервера',
+                link: '/p/servers'
+            },
+            {
+                text: 'Meteor Client',
+                link: '/p/meteor'
+            },
+            {
+                text: 'Полезные примочки',
+                link: '/p/useful-things'
+            }
+        ]
     }]
+
 }

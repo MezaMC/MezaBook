@@ -11,8 +11,14 @@
   }
 
   a.servers::before {
-    background-image: url("/icons/fire.svg");
+    background-image: url("/icons/mezaservers.svg");
     transform: scale(.95, .95) translate(0, 25%);
+  }
+
+  .text {
+    padding-top: .5rem;
+    font-size: 42px;
+    line-height: 56px;
   }
 
   //.VPButton {

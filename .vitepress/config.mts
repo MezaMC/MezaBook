@@ -125,17 +125,7 @@ export default defineConfig({
         text: 'Категории',
         items: [
           { text: 'Информация', link: '/info/' },
-          { text: 'Сообщество', link: '/community/' }
-        ]
-      },
-      {
-        text: 'OminousVoid',
-        activeMatch: '/ov/',
-        items: [
-          { text: 'Главная', link: '/ov/' },
-          { text: 'Правила', link: '/ov/rules' },
-          { text: 'Обновления', link: '/ov/updates' },
-          { text: 'Discord', link: 'https://ds.ominousvoid.net' }
+          { text: 'Для игроков', link: '/p/' }
         ]
       }
     ],
