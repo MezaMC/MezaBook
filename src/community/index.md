@@ -58,7 +58,7 @@ author: envizar
 Однако, именно после появления SiimpAlone этот жанр обрёл относительную популярность. Сервера делались по шаблону, который задал SiimpAlone.
 Так продолжается и по сей день, лишь шаблон модернизировался.
 
-Наиболее яркие активные представители жанра - [OminousVoid](/ov/), [WadnerServer](https://discord.gg/BbhGt7YU6z), ZeroFear.
+Наиболее яркие активные представители жанра - OminousVoid, [WadnerServer](https://discord.gg/BbhGt7YU6z), ZeroFear.
 
 ## Крипипасты
 
