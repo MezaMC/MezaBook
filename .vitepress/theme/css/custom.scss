@@ -40,35 +40,3 @@
     margin-right: 5px;
     background: var(--vp-c-default-soft);
 }
-
-
-.grad-warped {
-    background: linear-gradient(90deg, #3cff57, #00CDAC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad-redux {
-    background: linear-gradient(90deg, #FFB000, #D9924F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad-survivalhome {
-    background: linear-gradient(90deg, #FBA600, #FDFDFD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad-darkoffuture {
-    background: linear-gradient(90deg, #eab709, #8e750b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad-crimsonium {
-    background: linear-gradient(90deg, #ff347e, #9f8bff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grad-haunted {
-    background: linear-gradient(90deg, #282828, #A5A5A5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}

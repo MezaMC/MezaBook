@@ -1,27 +1,42 @@
-<script setup>
-
-import {Icon} from "@iconify/vue";
-import {useData} from "vitepress";
-
-</script>
-
-
 <template>
-	<div class="flex items-center justify-center mb-2 text-vptext-2 hover:text-vptext-1 transition-colors">
-		<div class="w-[92%] bg-bg-elv rounded-2 hover:(outline-brand-ptg outline-2 outline-offset-6) outline outline-transparent transition-all flex items-center flex-col p-t-4 gap-2 overflow-hidden">
-			<div class="flex gap-2">
-				<img src="/logo/p2g_logo.svg" class="w-8 h-8">
-				<span class="font-600 text-lg text-gray-2">Play2GO.cloud</span>
-			</div>
-			<div class="m-l-3 m-r-3">
-				Мощный VDS/игровой хостинг с низкими ценами и отличной защитой от DDoS.
-			</div>
-			<a href="https://p2g.meza.one" target="_blank" class="text-gray-2 active:text-brand-ptg/white h-12 flex w-full mt-2 border-2 border-t-solid border-gray-5/40 transition-colors 
-			hover:(border-brand-ptg bg-brand-ptg/12)
-			items-center justify-center font-500 gap-1">
-				<span>Перейти</span>
-				<Icon icon="tabler:external-link" class="w-4 h-4 stroke-width-2" />
-			</a>
-		</div>
-	</div>
+  <div
+      class="w-full flex justify-between bg-bg-card rounded-2 p-4 p-t-2 box-border banner
+      border-(2 solid #FF86AB55) hover:border-#FF86AB99 transition"
+  >
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row items-center gap-2">
+        <img src="/logo/p2g_logo.svg" alt="p2g-logo" class="w-8 h-8" />
+        <b>Play2GO.cloud</b>
+      </div>
+      <span>
+        Мощный и недорогой Minecraft/VDS хостинг.
+      </span>
+      <a class="hover:p-l-1 transition-all" href="https://p2g.meza.one" target="_blank">Перейти</a>
+    </div>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+
+.banner {
+  background: linear-gradient(
+          60deg,
+          #250107,
+          #060404
+  );
+}
+
+a {
+  color: #FF86AB;
+  text-decoration-color: #FF86AB55;
+  text-decoration: underline;
+  &:hover {
+    color: #ffbdd3;
+  }
+}
+
+.close-button {
+  --color: 255, 134, 171;
+}
+
+</style>

@@ -29,7 +29,7 @@ const { frontmatter } = useData()
     </template>
 
 	<template #aside-ads-after >
-      <P2G v-if="frontmatter['p2gad'] === true" />
+      <P2G v-if="frontmatter['p2gad'] !== false" />
     </template>
 
     <template #doc-footer-before>
