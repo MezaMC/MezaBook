@@ -125,7 +125,8 @@ export default defineConfig({
         text: 'Категории',
         items: [
           { text: 'Информация', link: '/info/' },
-          { text: 'Для игроков', link: '/p/' }
+          { text: 'Для игроков', link: '/p/' },
+          { text: 'Для разработчиков', link: '/s/' }
         ]
       }
     ],

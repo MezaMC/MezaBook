@@ -10,9 +10,28 @@
     margin-right: 0.5em;
   }
 
-  a.servers::before {
+  a.icon-mezaservers::before {
     background-image: url("/icons/mezaservers.svg");
     transform: scale(.95, .95) translate(0, 25%);
+  }
+
+  a.icon-book-open::before {
+    background-image: url("/icons/book-open.svg");
+    transform: scale(.95, .95) translate(0, 30%);
+  }
+
+  a.alt {
+    transition: 150ms all ease-in-out !important;
+    outline: 2px transparent solid;
+    &:hover {
+      outline-color: var(--vp-c-brand-2);
+      outline-offset: 2px;
+    }
+    &:active {
+      outline-offset: 8px;
+      outline-width: 10px;
+      outline-color: transparent;
+    }
   }
 
   .text {

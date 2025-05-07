@@ -7,12 +7,13 @@ hero:
   text: "Свободный ресурс о сообществе мистических Minecraft серверов"
   image: /logo/home.svg
   actions:
-    - theme: alt icon servers
+    - theme: alt icon icon-book-open
+      text: Читать статьи
+      link: /p/
+    - theme: alt icon icon-mezaservers
       text: MezaServers
       link: /servers/
-    - theme: alt
-      text: Для игроков
-      link: /p/
+    
 
 # features:
 #   - title: <span class='emoji'>📥</span> Возможность редактирования

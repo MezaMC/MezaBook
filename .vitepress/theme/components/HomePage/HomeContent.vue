@@ -6,15 +6,15 @@ import TechFeature from "./TechFeature.vue";
 
 <template>
 
-	<div class="transition flex flex-col items-center">
-		<span class=" text-brand-main text-lg font-500 mb-3">Удобно · Красиво · Практично</span>
+	<div class="transition flex flex-col items-center mt-10">
+		<span class=" text-brand-main text-lg font-500 mb-2">Удобно · Красиво · Практично</span>
 		<h2 class=" text-3xl line-height-[1.3] text-center font-600 important:m-0 important:p-0"></h2>
 		<span class="flex items-center gap-2 font-600 text-2xl text-center">
 				<Icon icon="tabler:building-skyscraper" class="w-8 h-8 lt-sm:hidden" />
 				<span>Современная платформа для сообщества</span>
 			</span>
-		<span class="font-400 mt-3 max-w-[700px] line-height-[1.6]" un-text="vptext-2 [20px] center">
-			MezaBook создан, чтобы объединить сообщество мистики Minecraft
+		<span class="font-400 mt-3 max-w-[800px] line-height-[1.6]" un-text="vptext-2 [16px] center">
+			MezaBook создан, чтобы объединить сообщество мистических серверов
 		</span>
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-8 mt-12">
@@ -30,28 +30,6 @@ import TechFeature from "./TechFeature.vue";
 			<Feature icon="tabler:plug-connected" title="Независимая платформа">
 				MezaBook является самостоятельной и свободной платформой. К тому же, рекламы на сайте нет - целью проекта не является заработок.
 			</Feature>
-		</div>
-
-		<div class="max-w-[680px] text-center mt-30 flex flex-col items-center">
-			<span class="flex items-center gap-2 font-600 text-2xl mb-3">
-				<Icon icon="tabler:users" class="w-8 h-8 lt-sm:hidden" />
-				<span>Немного о сообществе</span>
-			</span>
-
-			<div class="flex flex-col gap-[6px] text-vptext-2 text-lg">
-				<span>
-					Участники сообщества занимаются производством и потреблением 
-					тематического контента по мистике в Minecraft.
-				</span>
-				<br>
-				<span>
-					Практически весь контент не претендует на реалистичность. 
-					Современные мистические сервера, АРГ и страшные видео создаются 
-					ради истории и атмосферы, а не ради показа реальной мистики.
-				</span>
-			</div>
-
-			<a href="/community/" class="mt-4 hover:underline">Подробнее...</a>
 		</div>
 
 		<div class="max-w-[960px] mt-30 flex flex-col items-center">
